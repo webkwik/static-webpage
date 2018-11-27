@@ -4,6 +4,7 @@
   "description": "",
   "main": "index.js",
   "scripts": {
+    "start": "serve -s src",
     "deploy": "now && now alias"
   },
   "repository": {
