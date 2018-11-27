@@ -11,5 +11,8 @@
     {
       "src": "/(.*)", "dest": "/src/$1"
     }
-  ]
+  ],
+  "github": {
+    "silent": true
+  }
 }
