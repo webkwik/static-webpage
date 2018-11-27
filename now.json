@@ -1,5 +1,7 @@
 {
   "version": 2,
+  "name": "vlad-static-webpage-test",
+  "alias": ["vlad-static-webpage-test"],
   "builds": [
     {
       "src": "./src/*", "use": "@now/static"

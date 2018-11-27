@@ -1,0 +1,19 @@
+{
+  "name": "static-webpage",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "deploy": "now && now alias"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/webkwik/static-webpage.git"
+  },
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/webkwik/static-webpage/issues"
+  },
+  "homepage": "https://github.com/webkwik/static-webpage#readme"
+}
