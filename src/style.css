@@ -1,40 +1,35 @@
+.container-header, .container-search, .container-toggle {
+  display: flex;
+}
+
 .logo {
   width: 74.31px;
   height: 23.18px;
-  left: 125px;
-  top: 59px;
-  position: absolute;
+  padding: 59px 0 0 125px;
 }
 
 .search-icon {
   width: 20px;
   height: 20px;
-  left: 697px;
-  top: 61px;
-  position: absolute;
+  padding: 61px 0 0 500.12px;
 }
 
 .menu {
   width: 34px;
   height: 14px;
-  left: 1201px;
-  top: 64px;
-  position: absolute;
+  padding: 64px 0 0 489.43px;
 }
 
 #form {
   display: none;
-  left: 715px;
-  top: 90px;
-  position: absolute;
+  padding: 10px 0 0 720px;
+
 }
 
 #toggle {
   display: none;
+  height: 700px;
   width: 200px;
-  height: 100%;
   background-color: red;
-  left: 1001px;
-  top: 64px;
-  position: absolute; 
+  margin: 10px 0 0 1010px;
 }
