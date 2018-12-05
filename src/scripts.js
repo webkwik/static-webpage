@@ -1,7 +1,20 @@
-function toggleMenu() {
-    var headerContainer = document.getElementById("menu_toggle");
-    headerContainer.classList.toggle("toggle");
+function displayElement(form) {
+    if (form.style.display == "none") {
+        form.style.display = "block"
+    } else {
+        form.style.display = "none";
+    }
 }
 
+
+var searchIcon = document.getElementById("search");
+var form = document.getElementById('form');
+searchIcon.addEventListener("click", function () {
+    displayElement(form)}
+    , false);
+
 var menu = document.getElementById("menu_toggle");
-menu.addEventListener("click", toggleMenu, false);
+var toggle = document.getElementById('toggle');
+menu.addEventListener("click", function () {
+    displayElement(toggle)}
+    , false);

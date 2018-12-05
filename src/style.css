@@ -1,27 +1,40 @@
 .logo {
   width: 74.31px;
   height: 23.18px;
-  padding: 59px 0 0 125px;
+  left: 125px;
+  top: 59px;
   position: absolute;
 }
 
-.search {
+.searchIcon {
   width: 20px;
   height: 20px;
-  padding: 61px 0 0 697px;
+  left: 697px;
+  top: 61px;
   position: absolute;
 }
 
 .menu {
   width: 34px;
   height: 14px;
-  padding: 64px 0 0 1201px;
+  left: 1201px;
+  top: 64px;
   position: absolute;
 }
 
-.toggle {
+#form {
+  display: none;
+  left: 715px;
+  top: 90px;
+  position: absolute;
+}
+
+#toggle {
+  display: none;
   width: 200px;
   height: 100%;
   background-color: red;
-  position: absolute;
+  left: 1001px;
+  top: 64px;
+  position: absolute; 
 }
