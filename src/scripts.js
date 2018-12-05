@@ -13,7 +13,7 @@ searchIcon.addEventListener("click", function () {
     displayElement(form)}
     , false);
 
-var menu = document.getElementById("menu_toggle");
+var menu = document.getElementById("menu-toggle");
 var toggle = document.getElementById('toggle');
 menu.addEventListener("click", function () {
     displayElement(toggle)}
