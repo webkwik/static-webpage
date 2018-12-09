@@ -1,4 +1,10 @@
-.container-header, .container-search, .container-toggle {
+.container {
+  margin: auto;
+  width: 1360px;
+  height: 6738px;
+}
+
+.container-header, .container-toggle {
   display: flex;
 }
 
