@@ -4,7 +4,7 @@
   "alias": ["vlad-static-webpage-test"],
   "builds": [
     {
-      "src": "./src/*", "use": "@now/static"
+      "src": "./src/**/*", "use": "@now/static"
     }
   ],
   "routes": [
