@@ -6,7 +6,6 @@ function displayElement(form) {
     }
 }
 
-
 var searchIcon = document.getElementById("search");
 var form = document.getElementById('form');
 searchIcon.addEventListener("click", function () {

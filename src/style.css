@@ -1,7 +1,6 @@
 .container {
   margin: auto;
   width: 1360px;
-  height: 6738px;
 }
 
 .container-header, .container-toggle {
@@ -15,22 +14,37 @@
   padding: 59px 0 0 125px;
 }
 
+.icon-input {
+  position: relative;
+  width: 100px;
+  height: 24px;
+  padding: 59px 0 0 400.12px;
+}
+
 .search-icon {
+  position: absolute;
+  padding-left: 90px;
+  padding-top: 4px;
   width: 20px;
   height: 20px;
-  padding: 61px 0 0 500.12px;
+}
+
+.search-form {
+  position: absolute;
+  display: none;
+}
+
+.search-input {
+  border: 1.6px solid;
+  height: 24px;
+  border-radius: 5%;
+  
 }
 
 .menu {
   width: 34px;
   height: 14px;
   padding: 64px 0 0 489.43px;
-}
-
-#form {
-  display: none;
-  padding: 10px 0 0 720px;
-
 }
 
 #toggle {
