@@ -8,7 +8,7 @@ function displayElement(form) {
 
 function displayElementSearch(form, searchIcon) {
     form.style.opacity = 1;
-    searchIcon.opacity = 0;
+    searchIcon.style.opacity = 0;
 
 }
 
