@@ -6,14 +6,20 @@ function displayElement(form) {
     }
 }
 
+function displayElementSearch(form, searchIcon) {
+    form.style.opacity = 1;
+    searchIcon.opacity = 0;
+
+}
+
 var searchIcon = document.getElementById("search");
-var form = document.getElementById('form');
+var form = document.getElementById("form");
 searchIcon.addEventListener("click", function () {
-    displayElement(form)}
+    displayElementSearch(form, searchIcon)}
     , false);
 
 var menu = document.getElementById("menu-toggle");
-var toggle = document.getElementById('toggle');
+var toggle = document.getElementById("toggle");
 menu.addEventListener("click", function () {
     displayElement(toggle)}
     , false);
