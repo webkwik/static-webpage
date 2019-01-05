@@ -119,15 +119,15 @@
 }
 
 .container-slider {
-  padding-top: 60px;
+  margin-top: 60px;
   display: flex;
   justify-items: auto;
 }
+
 .title1 {
   width: 474px;
   height: 140px;
-  font-family: Fira Sans;
-  font-style: normal;
+  font-family: 'Fira Sans';
   font-weight: bold;
   line-height: 70px;
   font-size: 60px;
@@ -139,9 +139,7 @@
 .text1 {
   width: 474px;
   height: 81px;
-  font-family: Fira Sans;
-  font-style: normal;
-  font-weight: normal;
+  font-family: 'Fira Sans';
   line-height: 28px;
   font-size: 18px;
   color: #222222;
@@ -161,8 +159,7 @@
 }
 
 .text-button {
-  font-family: Fira Sans;
-  font-style: normal;
+  font-family: 'Fira Sans';
   font-weight: 500;
   line-height: 24px;
   font-size: 14px;
@@ -187,9 +184,7 @@
 }
 
 .loader-text {
-  font-family: Fira Sans;
-  font-style: normal;
-  font-weight: normal;
+  font-family: 'Fira Sans';
   line-height: 28px;
   font-size: 18px;
   color: #222222;
