@@ -124,7 +124,7 @@
   justify-items: auto;
 }
 
-.title1 {
+.slider-title {
   width: 474px;
   height: 140px;
   font-family: 'Fira Sans';
@@ -136,7 +136,7 @@
   padding-top: 50px;
 }
 
-.text1 {
+.slider-text {
   width: 474px;
   height: 81px;
   font-family: 'Fira Sans';
@@ -220,9 +220,5 @@
   background: #FFFFFF;
   display: flex;
   justify-content: center;
-  align-items: center;
 }
 
-.play {
-  margin-left: 3px;
-}
