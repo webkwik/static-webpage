@@ -126,7 +126,6 @@
 
 .slider-title {
   width: 474px;
-  height: 140px;
   font-family: 'Fira Sans';
   font-weight: bold;
   line-height: 70px;
@@ -138,7 +137,6 @@
 
 .slider-text {
   width: 474px;
-  height: 81px;
   font-family: 'Fira Sans';
   line-height: 28px;
   font-size: 18px;
@@ -230,7 +228,6 @@
 
 .about-title {
   width: 540px;
-  height: 97px;
   font-family: 'Fira Sans';
   font-weight: 600;
   line-height: 50px;
@@ -241,8 +238,7 @@
 }
 
 .about-text {
-  width: 444.82px;
-  height: 81px;
+  width: 445px;
   font-family: 'Fira Sans';
   line-height: 28px;
   font-size: 18px;
@@ -259,13 +255,11 @@
   display: flex;
   justify-items: auto;
   width: 285px;
-  height: 65px;
   margin-top: 61px;
 }
 
 .about-name {
   width: 189px;
-  height: 26px;
   font-family: 'Fira Sans';
   font-style: normal;
   font-weight: 500;
