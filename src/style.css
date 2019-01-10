@@ -126,7 +126,6 @@
 
 .slider-title {
   width: 474px;
-  height: 140px;
   font-family: 'Fira Sans';
   font-weight: bold;
   line-height: 70px;
@@ -138,7 +137,6 @@
 
 .slider-text {
   width: 474px;
-  height: 81px;
   font-family: 'Fira Sans';
   line-height: 28px;
   font-size: 18px;
@@ -222,3 +220,66 @@
   justify-content: center;
 }
 
+.container-about {
+  display: flex;
+  justify-items: auto;
+  margin-top: 137px;
+}
+
+.about-title {
+  width: 540px;
+  font-family: 'Fira Sans';
+  font-weight: 600;
+  line-height: 50px;
+  font-size: 40px;
+  letter-spacing: -1px;
+  color: #222222;
+  margin-top: 40px;
+}
+
+.about-text {
+  width: 445px;
+  font-family: 'Fira Sans';
+  line-height: 28px;
+  font-size: 18px;
+  color: #222222;
+  opacity: 0.7;
+  margin-top: 30px;
+}
+
+.margin-for-about {
+  margin-top: 20px;
+}
+
+.about-user {
+  display: flex;
+  justify-items: auto;
+  width: 285px;
+  margin-top: 61px;
+}
+
+.about-name {
+  width: 189px;
+  font-family: 'Fira Sans';
+  font-style: normal;
+  font-weight: 500;
+  line-height: 32px;
+  font-size: 22px;
+  color: #222222;
+  margin-left: 30px;
+}
+
+.about-position {
+  width: 189px;
+  height: 21px;
+  font-family: 'Fira Sans';
+  line-height: 28px;
+  font-size: 18px;
+  color: #222222;
+  opacity: 0.7;
+  margin-left: 30px;
+}
+
+.container-slider-item2, .about-title-text {
+  margin-left: 90px;
+}
