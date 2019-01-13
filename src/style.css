@@ -226,7 +226,7 @@
   margin-top: 137px;
 }
 
-.about-title {
+.about-title, .services-text {
   width: 540px;
   font-family: 'Fira Sans';
   font-weight: 600;
@@ -282,4 +282,138 @@
 
 .container-slider-item2, .about-title-text {
   margin-left: 90px;
+}
+
+.services-logo {
+  width: 160px;
+  font-family: 'Fira Sans';
+  font-weight: 500;
+  line-height: 24px;
+  font-size: 14px;
+  letter-spacing: 4px;
+  text-transform: uppercase;
+  color: #222222;
+  opacity: 0.7;
+  margin-top: 142px;
+}
+
+.services-text-menu {
+  display: flex;
+}
+
+.services-menu {
+  display: flex;
+  margin-left: 0;
+  margin-top: 40px;
+  width: 409px;
+}
+
+.services-menu-items {
+  margin-top: -21px;
+  margin-left: 60px;
+}
+
+.menu-item {
+  list-style-type: none;
+  width: 189px;
+  font-family: 'Fira Sans';
+  line-height: 28px;
+  font-size: 18px;
+  color: #222222;
+  opacity: 0.5;
+  margin-top: 21px;
+}
+
+.services-slider {
+  display: flex;
+  margin-top: 99px;
+}
+
+.services-slider-video {
+  background: url('images/Placeholder_services_video.svg');
+  width: 825px;
+  height: 500px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.services_placeholder {
+  width: 825px;
+  height: 500px;
+  opacity: 0.3;
+  margin-left: 30px;
+}
+
+.services-navigation {
+  width: 125px;
+  height: 50px;
+  display: flex;
+  margin-top: 50px;
+  justify-content: space-between;
+}
+
+.services-navigation-left, .services-navigation-right {
+  width: 50px;
+  height: 50px;
+  background: #C4C4C4;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.container-features {
+  margin-top: 180px;
+  display: flex;
+}
+
+.features-placeholder {
+  margin-left: -125px;
+}
+
+.features-text-title {
+  margin-left: 192px;
+  margin-top: 30px;
+}
+
+.features-title {
+  width: 473px;
+  font-family: 'Fira Sans';
+  font-weight: 600;
+  line-height: 50px;
+  font-size: 40px;
+  letter-spacing: -1px;
+  color: #222222;
+}
+
+.features-text {
+  width: 475px;
+  font-family: 'Fira Sans';
+  line-height: 28px;
+  font-size: 18px;
+  color: #222222;
+  opacity: 0.7;
+  margin-top: 30px;
+}
+
+.ultimate-result, .minimal-design {
+  display: flex;
+  align-items: center;
+  margin-top: 62px;
+}
+
+.ultimate-result-text, .minimal-design-text {
+  width: 190px;
+  font-family: 'Fira Sans';
+  font-weight: bold;
+  line-height: 24px;
+  font-size: 14px;
+  letter-spacing: 4px;
+  text-transform: uppercase;
+  color: #000000;
+  margin-left: 29px;
+}
+
+.minimal-design {
+  margin-top: 30px;
 }
