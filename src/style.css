@@ -126,7 +126,7 @@
 
 .slider-title {
   width: 474px;
-  font-family: 'Fira Sans';
+  font-family: 'Fira Sans', sans-serif;
   font-weight: bold;
   line-height: 70px;
   font-size: 60px;
@@ -137,7 +137,7 @@
 
 .slider-text {
   width: 474px;
-  font-family: 'Fira Sans';
+  font-family: 'Fira Sans', sans-serif;
   line-height: 28px;
   font-size: 18px;
   color: #222222;
@@ -157,7 +157,7 @@
 }
 
 .text-button {
-  font-family: 'Fira Sans';
+  font-family: 'Fira Sans', sans-serif;
   font-weight: 500;
   line-height: 24px;
   font-size: 14px;
@@ -182,7 +182,7 @@
 }
 
 .loader-text {
-  font-family: 'Fira Sans';
+  font-family: 'Fira Sans', sans-serif;
   line-height: 28px;
   font-size: 18px;
   color: #222222;
@@ -206,7 +206,7 @@
   height: 310px;
   top: 60%;
   left: 45%;
-  background: url("images/Placeholder_video.svg");
+  background: url("images/placeholder-video.png");
   display: flex;
   justify-content: center;
   align-items: center;
@@ -228,7 +228,7 @@
 
 .about-title, .services-text {
   width: 540px;
-  font-family: 'Fira Sans';
+  font-family: 'Fira Sans', sans-serif;
   font-weight: 600;
   line-height: 50px;
   font-size: 40px;
@@ -239,7 +239,7 @@
 
 .about-text {
   width: 445px;
-  font-family: 'Fira Sans';
+  font-family: 'Fira Sans', sans-serif;
   line-height: 28px;
   font-size: 18px;
   color: #222222;
@@ -260,7 +260,7 @@
 
 .about-name {
   width: 189px;
-  font-family: 'Fira Sans';
+  font-family: 'Fira Sans', sans-serif;
   font-style: normal;
   font-weight: 500;
   line-height: 32px;
@@ -272,7 +272,7 @@
 .about-position {
   width: 189px;
   height: 21px;
-  font-family: 'Fira Sans';
+  font-family: 'Fira Sans', sans-serif;
   line-height: 28px;
   font-size: 18px;
   color: #222222;
@@ -286,7 +286,7 @@
 
 .services-logo {
   width: 160px;
-  font-family: 'Fira Sans';
+  font-family: 'Fira Sans', sans-serif;
   font-weight: 500;
   line-height: 24px;
   font-size: 14px;
@@ -316,7 +316,7 @@
 .menu-item {
   list-style-type: none;
   width: 189px;
-  font-family: 'Fira Sans';
+  font-family: 'Fira Sans', sans-serif;
   line-height: 28px;
   font-size: 18px;
   color: #222222;
@@ -330,7 +330,7 @@
 }
 
 .services-slider-video {
-  background: url('images/Placeholder_services_video.svg');
+  background: url('images/placeholder-services-video.png');
   width: 825px;
   height: 500px;
   display: flex;
@@ -338,7 +338,7 @@
   align-items: center;
 }
 
-.services_placeholder {
+.services-placeholder {
   width: 825px;
   height: 500px;
   opacity: 0.3;
@@ -378,7 +378,7 @@
 
 .features-title {
   width: 473px;
-  font-family: 'Fira Sans';
+  font-family: 'Fira Sans', sans-serif;
   font-weight: 600;
   line-height: 50px;
   font-size: 40px;
@@ -388,7 +388,7 @@
 
 .features-text {
   width: 475px;
-  font-family: 'Fira Sans';
+  font-family: 'Fira Sans', sans-serif;
   line-height: 28px;
   font-size: 18px;
   color: #222222;
@@ -404,7 +404,7 @@
 
 .ultimate-result-text, .minimal-design-text {
   width: 190px;
-  font-family: 'Fira Sans';
+  font-family: 'Fira Sans', sans-serif;
   font-weight: bold;
   line-height: 24px;
   font-size: 14px;
