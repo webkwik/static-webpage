@@ -258,8 +258,7 @@
   margin-top: 61px;
 }
 
-.about-name {
-  width: 189px;
+.about-name, .testimonials-name {
   font-family: 'Fira Sans', sans-serif;
   font-style: normal;
   font-weight: 500;
@@ -269,8 +268,7 @@
   margin-left: 30px;
 }
 
-.about-position {
-  width: 189px;
+.about-position, .testimonials-position {
   height: 21px;
   font-family: 'Fira Sans', sans-serif;
   line-height: 28px;
@@ -284,7 +282,7 @@
   margin-left: 90px;
 }
 
-.services-logo, .our-works-logo {
+.services-logo, .our-works-logo, .testimonials-logo {
   width: 160px;
   font-family: 'Fira Sans', sans-serif;
   font-weight: 900;
@@ -345,7 +343,7 @@
   margin-left: 30px;
 }
 
-.services-navigation {
+.services-navigation, .testimonials-navigation {
   width: 125px;
   height: 50px;
   display: flex;
@@ -353,7 +351,7 @@
   justify-content: space-between;
 }
 
-.services-navigation-left, .services-navigation-right {
+.services-navigation-left, .services-navigation-right, .testimonials-navigation-left, .testimonials-navigation-right {
   width: 50px;
   height: 50px;
   background: #C4C4C4;
@@ -470,4 +468,39 @@
 
 .our-works-button {
   margin-top: 0;
+
+.container-testimonials {
+  display: flex;
+  justify-content: space-between;
+  margin-top: 248px;
+}
+
+.testimonials-logo {
+  margin-top: 0;
+  width: 190px;
+}
+
+.testimonials-text {
+  width: 540px;
+  font-family: 'Fira Sans', sans-serif;
+  font-weight: 600;
+  line-height: 50px;
+  font-size: 40px;
+  letter-spacing: -1px;
+  color: #222222;
+}
+
+.testimonials-name, .testimonials-position {
+  margin-left: 0;
+  margin-bottom: 13px;
+}
+
+.testimonials-logo-text-nav {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+}
+
+.testimonials-name-position {
+  margin-top: 40px;
 }
