@@ -40,3 +40,36 @@ var exitMenu = document.getElementById("exit-menu");
 exitMenu.addEventListener("click", function () {
     removeClass(containerToggle, menu)}
     , false);
+
+//video youtube
+var video = document.getElementById("video");
+var buttonPlay = document.getElementById("button-play");
+var videoYoutube = document.getElementById("video-youtube");
+var exitVideo = document.getElementById("exit-video");
+var iframeVideo = document.getElementById("iframe-video");
+
+function displayVideoYoutube(videoYoutube, video) {
+    videoYoutube.classList.add("for-video-youtube");
+    video.classList.add("for-video");
+}
+
+function removeElementVideo(videoYoutube, video) {
+    videoYoutube.classList.remove("for-video-youtube");
+    video.classList.remove("for-video");
+}
+
+function stopVideo(frameVideo) {
+    frameVideo.src = frameVideo.src;
+}
+
+buttonPlay.addEventListener("click", function () {
+    displayVideoYoutube(videoYoutube, video)}
+    , false);
+
+exitVideo.addEventListener("click", function () {
+    removeElementVideo(videoYoutube, video)}
+    , false);
+
+exitVideo.addEventListener("click", function () {
+    stopVideo(iframeVideo)}
+    , false);
