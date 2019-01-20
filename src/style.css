@@ -1,4 +1,4 @@
-.container {
+.container, .container-footer {
   margin: auto;
   width: 960px;
 }
@@ -10,7 +10,7 @@
   height: 80px;
 }
 
-.logo {
+.logo, .footer-logo {
   font-family: 'Montserrat', sans-serif;
   font-weight: bold;
   font-size: 24px;
@@ -529,4 +529,106 @@
   display: flex;
   justify-content: space-between;
   margin-top: 75px;
+}
+
+footer {
+  background: #515151;
+  margin-top: 135px;
+}
+
+.container-footer {
+  height: 240px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+
+.footer-logo-menu-form {
+  height: 42px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.footer-logo {
+  color: #FFFFFF;
+}
+
+.footer-menu {
+  display: flex;
+  justify-content: space-between;
+  width: 336px;
+}
+
+.footer-menu-href {
+  font-family: 'Fira Sans', sans-serif;
+  line-height: 28px;
+  font-size: 18px;
+  color: #FFFFFF;
+  cursor: pointer;
+  text-decoration: none;
+}
+
+.footer-forms {
+  display: flex;
+}
+
+.footer-input {
+  width: 140px;
+  height: 40px;
+  border: 0;
+  font-family: 'Fira Sans', sans-serif;
+  line-height: 28px;
+  font-size: 18px;
+  background: #F5F4FF;
+  text-indent: 15px;
+}
+
+.footer-button {
+  width: 80px;
+  height: 42px;
+  background: #C6B393;
+  border: 0;
+  font-family: 'Fira Sans', sans-serif;
+  font-weight: 500;
+  line-height: 24px;
+  font-size: 14px;
+  letter-spacing: 4px;
+  color: #FFFFFF;
+  margin-left: 18px;
+}
+
+.footer-divider {
+  opacity: 0.2;
+  border: 1px solid #FFFFFF;
+  box-sizing: border-box;
+  margin-top: 40px;
+}
+
+.footer-submenu-social {
+  display: flex;
+  justify-content: space-between;
+  margin-top: 37px;
+}
+
+.footer-submenu {
+  width: 400px;
+  display: flex;
+  justify-content: space-between;
+}
+
+.footer-submenu-href {
+  font-family: 'Fira Sans', sans-serif;
+  line-height: 28px;
+  font-size: 18px;
+  color: #FFFFFF;
+  opacity: 0.4;
+  text-decoration: none;
+}
+
+.footer-social {
+  display: flex;
+  justify-content: space-between;
+  width: 120px;
+  opacity: 0.4;
 }
