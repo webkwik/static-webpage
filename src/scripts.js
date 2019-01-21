@@ -46,7 +46,7 @@ var video = document.getElementById("video");
 var buttonPlay = document.getElementById("button-play");
 var videoYoutube = document.getElementById("video-youtube");
 var exitVideo = document.getElementById("exit-video");
-var iframeVideo = document.getElementById("iframe-video");
+var iframeVideo = document.getElementsByClassName("iframe-video");
 
 function displayVideoYoutube(videoYoutube, video) {
     videoYoutube.classList.add("for-video-youtube");
@@ -59,7 +59,7 @@ function removeElementVideo(videoYoutube, video) {
 }
 
 function stopVideo(frameVideo) {
-    frameVideo.src = frameVideo.src;
+    frameVideo.item(0).contentWindow.postMessage('{"event":"command","func":"pauseVideo","args":""}', '*');
 }
 
 buttonPlay.addEventListener("click", function () {
