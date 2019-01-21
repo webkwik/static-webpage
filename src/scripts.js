@@ -62,6 +62,14 @@ function stopVideo(frameVideo) {
     frameVideo.item(0).contentWindow.postMessage('{"event":"command","func":"pauseVideo","args":""}', '*');
 }
 
+function playVideo(frameVideo) {
+    frameVideo.item(0).contentWindow.postMessage('{"event":"command","func":"playVideo","args":""}', '*');
+}
+
+buttonPlay.addEventListener("click", function () {
+    playVideo(iframeVideo)}
+    , false);
+
 buttonPlay.addEventListener("click", function () {
     displayVideoYoutube(videoYoutube, video)}
     , false);
