@@ -492,6 +492,13 @@
 .our-works-placeholder {
   width: 300px;
   height: 400px;
+  transition: 1s;
+}
+
+.our-works-placeholder:hover {
+  width: 370px;
+  height: 450px;
+  margin-top: -25px;
 }
 
 .our-works-text-button {
