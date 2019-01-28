@@ -365,9 +365,14 @@
   margin-top: 21px;
 }
 
+.services-sliser-nav {
+  position: relative;
+  left: 5%;
+}
+
 .services-slider {
-  display: flex;
   margin-top: 99px;
+  width: 865px;
 }
 
 .services-slider-video {
@@ -383,7 +388,6 @@
   width: 825px;
   height: 500px;
   opacity: 0.3;
-  margin-left: 30px;
 }
 
 .services-navigation, .testimonials-navigation {
@@ -392,6 +396,7 @@
   display: flex;
   margin-top: 50px;
   justify-content: space-between;
+  cursor: pointer;
 }
 
 .services-navigation-left, .services-navigation-right, .testimonials-navigation-left, .testimonials-navigation-right {
