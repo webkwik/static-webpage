@@ -1,6 +1,7 @@
 .container, .container-footer {
   margin: auto;
-  width: 960px;
+  width: 100%;
+  max-width: 960px;
 }
 
 .container-header {
@@ -687,4 +688,24 @@ footer {
   justify-content: space-between;
   width: 120px;
   opacity: 0.4;
+}
+
+@media (max-width:1260px) {
+  .services-menu-items {
+    margin-left: 0;
+  }
+}
+
+@media (max-width:800px) {
+  .services-text {
+    width: 100%;
+  }
+  .services-text-menu {
+    display: block;
+  }
+
+  .services-menu-items {
+    margin-left: 0;
+  }
+
 }
