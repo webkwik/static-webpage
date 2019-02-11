@@ -217,7 +217,7 @@
   align-items: center;
   opacity: 1;
   z-index: 100;
-  transition: 2s ease-out;
+  transition: 1s ease-out;
 }
 
 .button-play {
@@ -268,11 +268,6 @@
   display: flex;
   justify-items: auto;
   margin-top: 137px;
-}
-
-.placeholder-about {
-  max-width: 100%;
-  height: auto;
 }
 
 .about-title, .services-text {
@@ -694,9 +689,9 @@ footer {
   .video, .video-youtube {
     top: 210px;
     left: 55%;
-    transition: 1s ease-out;
+    transition: 1s;
   }
-  
+
   .about-title {
     width: 85%;
     margin-top: 0;
@@ -723,7 +718,8 @@ footer {
 /* Tablet Styles */
 @media only screen and (min-width: 401px) and (max-width: 960px) {
   .container-slider {
-    display: block;
+    flex-direction: column;
+    margin-bottom: -310px;
   }
   
   .container-slider-item2, .loader {
@@ -735,14 +731,31 @@ footer {
     text-align: center;
   }
 
-  .video, .video-youtube {
-    top: 570px;
-    left: 15%;
+  .slider-title-text, .container-about, .services-text-menu, .container-features, .our-works-text-button {
+    margin-left: 5%;
+    margin-right: 5%;
+  }
+
+  .video {
+    position: relative;
+    top: 0;
+    left: 50%;
+    transform: translate(-50%);
     transition: 1s ease-out;
+    margin-top: 50px; 
+  }
+
+  .video-youtube {
+    width: 440px;
+    position: relative;
+    top: -310px;
+    left: 50%;
+    transform: translate(-45%);
   }
 
   .container-about {
     display: block;
+    margin-top: 20px;
   }
 
   .placeholder-about {
@@ -751,7 +764,6 @@ footer {
 
   .about-title {
     width: 100%;
-    margin-top: 430px;
     text-align: center;
   }
 
@@ -776,7 +788,7 @@ footer {
     margin: 10px auto;
   }
 
-  .services-logo, .container-features {
+  .services-logo, .container-features, .our-works-logo {
     margin-top: 60px;
   }
 
@@ -790,7 +802,53 @@ footer {
   }
 
   .ultimate-result, .minimal-design {
-    margin: 20px auto;
+    margin: 20px auto 0 auto;
+  }
+
+ .our-works-text-button {
+    display: block;
+    margin-top: 0;
+  }
+  
+  .our-works-switchers, .our-works-placeholders {
+    display: none;
+  }
+
+  .our-works-title, .our-works-text {
+    text-align: center;
+    width: 100%;
+  }
+
+  .our-works-button {
+    margin: 20px auto 0 auto;
+  }
+
+  .our-works-title-switchers {
+    margin-bottom: 30px;
+  }
+  .container-testimonials {
+    display: none;
+  }
+
+  .container-clients {
+    margin-top: 60px;
+  }
+
+  .clients-title, .clients-brands, .footer-logo, .footer-forms, .footer-submenu, .footer-divider {
+    display: none;
+  }
+
+  .footer-logo-menu-form, .footer-submenu-social {
+    justify-content: center;
+  }
+
+  .container-footer {
+    height: 150px;
+    margin-top: 80px;
+  }
+
+  footer {
+    margin: 0;
   }
 }
 
