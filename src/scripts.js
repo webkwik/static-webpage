@@ -1,22 +1,31 @@
-function displayElementSearch(form, searchIcon) {
-    form.classList.add("for-form-search");
-    searchIcon.classList.add("for-icon-search");
+function displayElementSearch(form, searchIcon, logo) {
+    if (window.matchMedia("(max-width: 960px)").matches) {
+        form.classList.add("for-form-search");
+        searchIcon.classList.add("for-icon-search");
+        logo.classList.add("for-icon-search");
+      } else {
+        form.classList.add("for-form-search");
+        searchIcon.classList.add("for-icon-search");
+      }
 }
 
-function removeElementSearch(form, searchIcon) {
+function removeElementSearch(form, searchIcon, logo) {
     form.classList.remove("for-form-search");
     searchIcon.classList.remove("for-icon-search");
+    logo.classList.remove("for-icon-search");
 }
 
 var searchIcon = document.getElementById("search");
 var form = document.getElementById("form");
+var logo = document.getElementById("logo");
+
 searchIcon.addEventListener("click", function () {
-    displayElementSearch(form, searchIcon)}
+    displayElementSearch(form, searchIcon, logo)}
     , false);
 
 var button = document.getElementById("button");
 button.addEventListener("click", function () {
-    removeElementSearch(form, searchIcon)}
+    removeElementSearch(form, searchIcon, logo)}
     , false);
 
 var menu = document.getElementById("menu-toggle");
@@ -81,32 +90,3 @@ exitVideo.addEventListener("click", function () {
 exitVideo.addEventListener("click", function () {
     stopVideo(iframeVideo)}
     , false);
-
-
-
-// header mobile
-var logoMobile = document.getElementById("logo-mobile");
-var searchIconMobile = document.getElementById("search-mobile");
-var formMobile = document.getElementById("form-mobile");
-var buttonMobile = document.getElementById("button-mobile");
-
-searchIconMobile.addEventListener("click", function () {
-    displayElementSearchMobile(formMobile, searchIconMobile, logoMobile)}
-    , false);
-
-buttonMobile.addEventListener("click", function () {
-    removeElementSearchMobile(formMobile, searchIconMobile, logoMobile)}
-    , false);
-
-function displayElementSearchMobile(form, searchIcon, logo) {
-    form.classList.add("for-form-search-mobile");
-    searchIcon.classList.add("for-icon-search-mobile");
-    logo.style.opacity = 0;
-}
-
-function removeElementSearchMobile(form, searchIcon, logo) {
-    form.classList.remove("for-form-search-mobile");
-    searchIcon.classList.remove("for-icon-search-mobile");
-    logo.style.opacity = 1;
-}
-
