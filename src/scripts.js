@@ -81,3 +81,32 @@ exitVideo.addEventListener("click", function () {
 exitVideo.addEventListener("click", function () {
     stopVideo(iframeVideo)}
     , false);
+
+
+
+// header mobile
+var logoMobile = document.getElementById("logo-mobile");
+var searchIconMobile = document.getElementById("search-mobile");
+var formMobile = document.getElementById("form-mobile");
+var buttonMobile = document.getElementById("button-mobile");
+
+searchIconMobile.addEventListener("click", function () {
+    displayElementSearchMobile(formMobile, searchIconMobile, logoMobile)}
+    , false);
+
+buttonMobile.addEventListener("click", function () {
+    removeElementSearchMobile(formMobile, searchIconMobile, logoMobile)}
+    , false);
+
+function displayElementSearchMobile(form, searchIcon, logo) {
+    form.classList.add("for-form-search-mobile");
+    searchIcon.classList.add("for-icon-search-mobile");
+    logo.style.opacity = 0;
+}
+
+function removeElementSearchMobile(form, searchIcon, logo) {
+    form.classList.remove("for-form-search-mobile");
+    searchIcon.classList.remove("for-icon-search-mobile");
+    logo.style.opacity = 1;
+}
+
