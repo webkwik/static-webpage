@@ -748,14 +748,21 @@ footer {
     transform: translate(-50%);
     transition: 1s ease-out;
     margin-top: 50px; 
+    width: 300px;
   }
 
   .video-youtube {
-    width: 440px;
+    width: 280px;
     position: relative;
     top: -310px;
     left: 50%;
-    transform: translate(-45%);
+    transform: translate(-52%);
+  }
+
+  .exit-video {
+    font-size: 14px;
+    width: 100%;
+    margin-left: 2px;
   }
 
   .container-about {
@@ -789,8 +796,14 @@ footer {
     margin: 0;
   }
 
+  .menu-item {
+    font-size: 14px;
+    width: 100%;
+  }
+
   .services-menu {
     margin: 10px auto;
+    width: 100%;
   }
 
   .services-logo, .container-features, .our-works-logo {
@@ -819,7 +832,7 @@ footer {
     display: none;
   }
 
-  .our-works-title, .our-works-text {
+  .our-works-title, .our-works-text, .clients-text {
     text-align: center;
     width: 100%;
   }
@@ -854,6 +867,11 @@ footer {
 
   footer {
     margin: 0;
+  }
+
+  .container-header {
+    margin-left: 15px;
+    margin-right: 15px;
   }
 
   .icon-input {
