@@ -484,7 +484,7 @@
   margin-left: 24px;
 }
 
-.our-works-placeholders {
+.our-works-placeholders-1, .our-works-placeholders-2 {
   display: flex;
   justify-content: space-between;
   margin-top: 30px;
@@ -828,8 +828,17 @@ footer {
     margin-top: 0;
   }
   
-  .our-works-switchers, .our-works-placeholders {
+  .our-works-switchers, .our-works-placeholder:hover, .our-works-placeholders-2 {
     display: none;
+  }
+
+  .our-works-placeholders-1 {
+    display: block;
+  }
+
+  .our-works-placeholder {
+    width: 100%;
+    margin-bottom: 10px;
   }
 
   .our-works-title, .our-works-text, .clients-text {
@@ -852,17 +861,39 @@ footer {
     margin-top: 60px;
   }
 
-  .clients-title, .clients-brands, .footer-logo, .footer-forms, .footer-submenu, .footer-divider {
+  .clients-title, .footer-logo, .footer-forms {
     display: none;
   }
 
-  .footer-logo-menu-form, .footer-submenu-social {
+  .footer-logo-menu-form {
     justify-content: center;
+  }
+
+  .footer-submenu-social {
+    flex-direction: column;
+    margin: 0;
+  }
+
+  .footer-social {
+    margin: 20px auto 0 auto;
+  }
+
+  .footer-submenu {
+    margin: 20px auto 0 auto;
+    width: 330px;
+  }
+
+  .footer-submenu-href {
+    font-size: 16px;
   }
 
   .container-footer {
     height: 150px;
-    margin-top: 80px;
+    margin-top: 50px;
+  }
+
+  .footer-divider {
+    margin-top: 20px;
   }
 
   footer {
@@ -890,6 +921,14 @@ footer {
   .container-toggle {
     width: 100%;
     right: -100%;
+  }
+
+  .clients-brand {
+    width: 10%;
+  }
+
+  .clients-brands {
+    margin-top: 20px;
   }
 
 }
