@@ -931,5 +931,9 @@ footer {
     margin-top: 20px;
   }
 
+  .open-menu {
+    right: 0;
+  }
+
 }
 
