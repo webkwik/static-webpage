@@ -828,17 +828,8 @@ footer {
     margin-top: 0;
   }
   
-  .our-works-switchers, .our-works-placeholder:hover, .our-works-placeholders-2 {
+  .our-works-switchers, .our-works-placeholder:hover, .our-works-placeholders-2, .our-works-placeholders-1 {
     display: none;
-  }
-
-  .our-works-placeholders-1 {
-    display: block;
-  }
-
-  .our-works-placeholder {
-    width: 100%;
-    margin-bottom: 10px;
   }
 
   .our-works-title, .our-works-text, .clients-text {
