@@ -804,6 +804,7 @@ footer {
   .services-menu {
     margin: 10px auto;
     width: 100%;
+    justify-content: center;
   }
 
   .services-logo, .container-features, .our-works-logo {
@@ -871,7 +872,7 @@ footer {
 
   .footer-submenu {
     margin: 20px auto 0 auto;
-    width: 330px;
+    width: 300px;
   }
 
   .footer-submenu-href {
