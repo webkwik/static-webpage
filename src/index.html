@@ -5,12 +5,14 @@
     <link rel="stylesheet" type="text/css" href="style.css">
     <link href="https://fonts.googleapis.com/css?family=Montserrat" rel="stylesheet">
     <link href="https://fonts.googleapis.com/css?family=Fira+Sans" rel="stylesheet">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
   </head>
   <body>
+    
     <div class="container">
     <header>
       <div class="container-header">
-        <div class="logo">Gravity</div>
+        <div class="logo" id="logo">Gravity</div>
         <div class="icon-input">
           <form id="form" class="search-form"> 
             <input class="search-input"  type="search" placeholder="search">
@@ -20,12 +22,13 @@
         </div>
         <div class="menu" id="menu-toggle"><img src="images/MenuIcon.svg"></div>
       </div>
+
     </header>
     <div class="container-slider">
       <div class="container-slider-item1">
         <div class="slider-title-text">
           <div class="slider-title">Work around you and your team</div>
-          <div class="slider-text">From ads that dance or sing to MTV-like commercials, <br> online advertisers are now using a new type of <br> technology “rich media” to attract consumers.</div>
+          <div class="slider-text">From ads that dance or sing to MTV-like commercials, online advertisers are now using a new type of technology “rich media” to attract consumers.</div>
         </div>
         <div class="blue-button">
           <div class="text-button">get started</div>
@@ -81,19 +84,15 @@
         </ul>
       </div>
     </div>
-    <div class="services-sliser-nav">
-      <div class="services-slider siema">
-        <div class="services-slider-video">
-          <div class="button-play">
-              <img src="images/Polygon.svg" class="play">
-          </div>
-        </div>
-        <img src="images/placeholder-services.png" class="services-placeholder">
+    <div class="services-slider-nav">
+      <div class="siema">
+        <div><img src="images/placeholder-services-video.png" class="services-placeholder"/></div>
+        <div><img src="images/placeholder-services-video.png" class="services-placeholder"/></div>
       </div>
       <div class="services-navigation">
-        <div class="services-navigation-left"><img src="images/Vector_left.svg" class="arrow-left"></div>
-        <div class="services-navigation-right"><img src="images/Vector_right.svg" class="arrow-left"></div>
-      </div>
+          <div class="services-navigation-left"><img src="images/Vector_left.svg" class="arrow-left"></div>
+          <div class="services-navigation-right"><img src="images/Vector_right.svg" class="arrow-left"></div>
+        </div>
     </div>
     <div class="container-features">
       <img src="images/placeholder-features.png" class="features-placeholder">
@@ -122,12 +121,12 @@
           <div class="our-works-switcher">Films</div>
         </div>
       </div>
-      <div class="our-works-placeholders">
+      <div class="our-works-placeholders-1">
         <img src="images/placeholder-our-works.png" class="our-works-placeholder">
         <img src="images/placeholder-our-works.png" class="our-works-placeholder">
         <img src="images/placeholder-our-works.png" class="our-works-placeholder">
       </div>
-      <div class="our-works-placeholders">
+      <div class="our-works-placeholders-2">
           <img src="images/placeholder-our-works.png" class="our-works-placeholder">
           <img src="images/placeholder-our-works.png" class="our-works-placeholder">
           <img src="images/placeholder-our-works.png" class="our-works-placeholder">
@@ -163,11 +162,11 @@
         </div>
       </div>
       <div class="clients-brands">
-        <img src="images/xiaomi.svg">
-        <img src="images/tinder.svg">
-        <img src="images/apple.svg">
-        <img src="images/nike.svg">
-        <img src="images/amd.svg">
+        <img src="images/xiaomi.svg" class="clients-brand">
+        <img src="images/tinder.svg" class="clients-brand">
+        <img src="images/apple.svg" class="clients-brand">
+        <img src="images/nike.svg" class="clients-brand">
+        <img src="images/amd.svg" class="clients-brand">
       </div>
     </div>
     </div>
@@ -213,7 +212,7 @@
     </div>
     
     <script src="scripts.js"></script>
-    <script src="siema.min.js"></script>
-    <script src="slider-services.js"></script>
+    <script src='https://pawelgrzybek.com/siema/assets/siema.min.js'></script>
+    <script src="index.js"></script>
   </body>
 </html>
