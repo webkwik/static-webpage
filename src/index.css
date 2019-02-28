@@ -216,7 +216,7 @@
   height: 310px;
   top: 60%;
   left: 45%;
-  background: url("images/placeholder-video.png");
+  background: url("/images/placeholder-video.png");
   display: flex;
   justify-content: center;
   align-items: center;
