@@ -11,11 +11,11 @@ function App() {
               <div class="icon-input">
                 <form id="form" class="search-form"> 
                   <input class="search-input"  type="search" placeholder="search" />
-                  <button class="button" type="button" id="button">Close</button>
+                  <button class="button" type="button" id="button" onClick={removeElementSearch}>Close</button>
                 </form>
-                <img src="images/Search.svg" class="search-icon" id="search" alt="search-icon" />
+                <img src="images/Search.svg" class="search-icon" id="search" alt="search-icon" onClick={displayElementSearch} />
               </div>
-              <div class="menu" id="menu-toggle"><img src="images/MenuIcon.svg" alt="menu-icon" /></div>
+              <div class="menu" id="menu-toggle"><img src="images/MenuIcon.svg" alt="menu-icon" onClick={addClass} /></div>
         </div>
       
           </header>
@@ -38,13 +38,13 @@ function App() {
               </div>
               <div class="container-slider-item2"><img src="images/placeholder.png" class="placeholder" alt="placeholder" /></div>
               <div class="video" id="video">
-                <div class="button-play" id="button-play">
+                <div class="button-play" id="button-play" onClick={displayVideoYoutube}>
                   <img src="images/Polygon.svg" class="play" alt="play" />
                 </div>
               </div>
               <div class="video-youtube" id="video-youtube">
                   <iframe width="400" height="310" src="https://www.youtube.com/embed/h2Jdj4iLIUU?&enablejsapi=1" frameborder="0" class="iframe-video" title="youtube"></iframe>
-                  <div class="exit-video" id="exit-video">X</div>
+                  <div class="exit-video" id="exit-video" onClick={removeElementVideo}>X</div>
               </div>
           </div>
           <div class="container-about">
@@ -198,7 +198,7 @@ function App() {
             </div>
           </footer>
           <div class="container-toggle" id="container-toggle">
-            <div class="exit-menu" id="exit-menu">X</div>
+            <div class="exit-menu" id="exit-menu" onClick={removeClass}>X</div>
             <div class="container-menu">
               <a href="#" class="menu-href">HOME</a>
               <a href="#" class="menu-href">ABOUT</a>
@@ -207,6 +207,69 @@ function App() {
           </div>
       </body>
     )
+}
+
+
+
+function displayElementSearch() {
+  var searchIcon = document.getElementById("search");
+  var form = document.getElementById("form");
+  var logo = document.getElementById("logo");
+  if (window.matchMedia("(max-width: 960px)").matches) {
+      form.classList.add("for-form-search");
+      searchIcon.classList.add("for-icon-search");
+      logo.classList.add("for-icon-search");
+    } else {
+      form.classList.add("for-form-search");
+      searchIcon.classList.add("for-icon-search");
+    }
+}
+
+function removeElementSearch() {
+  var searchIcon = document.getElementById("search");
+  var form = document.getElementById("form");
+  var logo = document.getElementById("logo");
+  form.classList.remove("for-form-search");
+  searchIcon.classList.remove("for-icon-search");
+  logo.classList.remove("for-icon-search");
+}
+
+function addClass() {
+  var menu = document.getElementById("menu-toggle");
+  var containerToggle = document.getElementById("container-toggle");
+  containerToggle.classList.add("open-menu");
+  menu.classList.add("visibility-icon-menu");
+}
+
+function removeClass() {
+  var menu = document.getElementById("menu-toggle");
+  var containerToggle = document.getElementById("container-toggle");
+  containerToggle.classList.remove("open-menu");
+  menu.classList.remove("visibility-icon-menu");
+}
+
+function displayVideoYoutube() {
+  var video = document.getElementById("video");
+  var videoYoutube = document.getElementById("video-youtube");
+  videoYoutube.classList.add("for-video-youtube");
+  video.classList.add("for-video");
+}
+
+function removeElementVideo() {
+  var video = document.getElementById("video");
+  var videoYoutube = document.getElementById("video-youtube");
+  videoYoutube.classList.remove("for-video-youtube");
+  video.classList.remove("for-video");
+}
+
+function stopVideo() {
+  var frameVideo = document.getElementsByClassName("iframe-video");
+  frameVideo.item(0).contentWindow.postMessage('{"event":"command","func":"pauseVideo","args":""}', '*');
+}
+
+function playVideo() {
+  var frameVideo = document.getElementsByClassName("iframe-video");
+  frameVideo.item(0).contentWindow.postMessage('{"event":"command","func":"playVideo","args":""}', '*');
 }
 
 export default App
