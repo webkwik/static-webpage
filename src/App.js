@@ -38,13 +38,13 @@ function App() {
               </div>
               <div class="container-slider-item2"><img src="images/placeholder.png" class="placeholder" alt="placeholder" /></div>
               <div class="video" id="video">
-                <div class="button-play" id="button-play" onClick={displayVideoYoutube}>
+                <div class="button-play" id="button-play" onClick={play}>
                   <img src="images/Polygon.svg" class="play" alt="play" />
                 </div>
               </div>
               <div class="video-youtube" id="video-youtube">
-                  <iframe width="400" height="310" src="https://www.youtube.com/embed/h2Jdj4iLIUU?&enablejsapi=1" frameborder="0" class="iframe-video" title="youtube"></iframe>
-                  <div class="exit-video" id="exit-video" onClick={removeElementVideo}>X</div>
+                  <iframe width="400" height="310" src="https://www.youtube.com/embed/h2Jdj4iLIUU?&enablejsapi=1&autoplay=0" allow="autoplay" frameborder="0" class="iframe-video" title="youtube"></iframe>
+                  <div class="exit-video" id="exit-video" onClick={stop}>X</div>
               </div>
           </div>
           <div class="container-about">
@@ -270,6 +270,16 @@ function stopVideo() {
 function playVideo() {
   var frameVideo = document.getElementsByClassName("iframe-video");
   frameVideo.item(0).contentWindow.postMessage('{"event":"command","func":"playVideo","args":""}', '*');
+}
+
+function play() {
+  playVideo();
+  displayVideoYoutube();
+}
+
+function stop() {
+  stopVideo();
+  removeElementVideo();
 }
 
 export default App
