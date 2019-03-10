@@ -3,192 +3,192 @@ import './App.css';
 
 function App() {
     return (
-        <body>      
-        <div class="container">
+      <div>      
+        <div className="container">
           <header>
-            <div class="container-header">
-              <div class="logo" id="logo">Gravity</div>
-              <div class="icon-input">
-                <form id="form" class="search-form"> 
-                  <input class="search-input"  type="search" placeholder="search" />
-                  <button class="button" type="button" id="button" onClick={removeElementSearch}>Close</button>
+            <div className="container-header">
+              <div className="logo" id="logo">Gravity</div>
+              <div className="icon-input">
+                <form id="form" className="search-form"> 
+                  <input className="search-input"  type="search" placeholder="search" />
+                  <button className="button" type="button" id="button" onClick={removeElementSearch}>Close</button>
                 </form>
-                <img src="images/Search.svg" class="search-icon" id="search" alt="search-icon" onClick={displayElementSearch} />
+                <img src="images/Search.svg" className="search-icon" id="search" alt="search-icon" onClick={displayElementSearch} />
               </div>
-              <div class="menu" id="menu-toggle"><img src="images/MenuIcon.svg" alt="menu-icon" onClick={addClass} /></div>
+              <div className="menu" id="menu-toggle"><img src="images/MenuIcon.svg" alt="menu-icon" onClick={addClass} /></div>
         </div>
       
           </header>
-          <div class="container-slider">
-            <div class="container-slider-item1">
-              <div class="slider-title-text">
-                <div class="slider-title">Work around you and your team</div>
-                <div class="slider-text">From ads that dance or sing to MTV-like commercials, online advertisers are now using a new type of technology “rich media” to attract consumers.</div>
+          <div className="container-slider">
+            <div className="container-slider-item1">
+              <div className="slider-title-text">
+                <div className="slider-title">Work around you and your team</div>
+                <div className="slider-text">From ads that dance or sing to MTV-like commercials, online advertisers are now using a new type of technology “rich media” to attract consumers.</div>
               </div>
-              <div class="blue-button">
-                <div class="text-button">get started</div>
+              <div className="blue-button">
+                <div className="text-button">get started</div>
               </div>
-              <div class="loader">
-                  <div class="loader-text">01</div>
-                  <div class="loader-bg">
-                    <div class="loader-active"></div>
+              <div className="loader">
+                  <div className="loader-text">01</div>
+                  <div className="loader-bg">
+                    <div className="loader-active"></div>
                   </div>
-                  <div class="loader-text">03</div>
+                  <div className="loader-text">03</div>
               </div>
               </div>
-              <div class="container-slider-item2"><img src="images/placeholder.png" class="placeholder" alt="placeholder" /></div>
-              <div class="video" id="video">
-                <div class="button-play" id="button-play" onClick={play}>
-                  <img src="images/Polygon.svg" class="play" alt="play" />
+              <div className="container-slider-item2"><img src="images/placeholder.png" className="placeholder" alt="placeholder" /></div>
+              <div className="video" id="video">
+                <div className="button-play" id="button-play" onClick={play}>
+                  <img src="images/Polygon.svg" className="play" alt="play" />
                 </div>
               </div>
-              <div class="video-youtube" id="video-youtube">
-                  <iframe width="400" height="310" src="https://www.youtube.com/embed/h2Jdj4iLIUU?&enablejsapi=1&autoplay=0" allow="autoplay" frameborder="0" class="iframe-video" title="youtube"></iframe>
-                  <div class="exit-video" id="exit-video" onClick={stop}>X</div>
+              <div className="video-youtube" id="video-youtube">
+                  <iframe width="400" height="310" src="https://www.youtube.com/embed/h2Jdj4iLIUU?&enablejsapi=1&autoplay=0" allow="autoplay" frameborder="0" className="iframe-video" title="youtube"></iframe>
+                  <div className="exit-video" id="exit-video" onClick={stop}>X</div>
               </div>
           </div>
-          <div class="container-about">
-            <img src="images/placeholder-about.png" class="placeholder-about" alt="placeholder-about" />
-            <div class="about-title-text">
-              <div class="about-title">We solve digital problems with an outstanding creative flare</div>
-              <div class="about-text">The best time to view the moon, obviously, is at night when there are few clouds and the weather is accommodating for a long and lasting study.</div>
-              <div class="about-text margin-for-about">For most of us, the idea of astronomy is something we directly connect to “stargazing”, telescopes and seeing magnificent displays in the heavens.</div>
-              <div class="about-user">
-                <img src="images/about-user.png" class="about-user-img" alt="about-user-img" />
-                <div class="about-name-position">
-                  <div class="about-name">Denis Shepovalov</div>
-                  <div class="about-position">Co-Founder & CEO</div>
+          <div className="container-about">
+            <img src="images/placeholder-about.png" className="placeholder-about" alt="placeholder-about" />
+            <div className="about-title-text">
+              <div className="about-title">We solve digital problems with an outstanding creative flare</div>
+              <div className="about-text">The best time to view the moon, obviously, is at night when there are few clouds and the weather is accommodating for a long and lasting study.</div>
+              <div className="about-text margin-for-about">For most of us, the idea of astronomy is something we directly connect to “stargazing”, telescopes and seeing magnificent displays in the heavens.</div>
+              <div className="about-user">
+                <img src="images/about-user.png" className="about-user-img" alt="about-user-img" />
+                <div className="about-name-position">
+                  <div className="about-name">Denis Shepovalov</div>
+                  <div className="about-position">Co-Founder & CEO</div>
                 </div>
               </div>
             </div>
           </div>
-          <div class="services-logo">— Services</div>
-          <div class="services-text-menu">
-            <div class="services-text">We love work hard and explore new things that’s why we cover lot of things. Check our service list and view details</div>
-            <div class="services-menu">
-              <ul class="services-menu-items">
-                <li class="menu-item">Multimedia</li>
-                <li class="menu-item">Interactive design</li>
-                <li class="menu-item">Packaging</li>
-                <li class="menu-item">Branding</li>
+          <div className="services-logo">— Services</div>
+          <div className="services-text-menu">
+            <div className="services-text">We love work hard and explore new things that’s why we cover lot of things. Check our service list and view details</div>
+            <div className="services-menu">
+              <ul className="services-menu-items">
+                <li className="menu-item">Multimedia</li>
+                <li className="menu-item">Interactive design</li>
+                <li className="menu-item">Packaging</li>
+                <li className="menu-item">Branding</li>
               </ul>
-              <ul class="services-menu-items">
-                  <li class="menu-item">Creative Strategy</li>
-                  <li class="menu-item">UI/UX</li>
-                  <li class="menu-item">Coding</li>
+              <ul className="services-menu-items">
+                  <li className="menu-item">Creative Strategy</li>
+                  <li className="menu-item">UI/UX</li>
+                  <li className="menu-item">Coding</li>
               </ul>
             </div>
           </div>
-          <div class="services-slider-nav">
-            <div class="siema">
-              <div><img src="images/placeholder-services-video.png" class="services-placeholder" alt="services-placeholder" /></div>
-              <div><img src="images/placeholder-services-video.png" class="services-placeholder" alt="services-placeholder" /></div>
+          <div className="services-slider-nav">
+            <div className="siema">
+              <div><img src="images/placeholder-services-video.png" className="services-placeholder" alt="services-placeholder" /></div>
+              <div><img src="images/placeholder-services-video.png" className="services-placeholder" alt="services-placeholder" /></div>
             </div>
-            <div class="services-navigation">
-                <div class="services-navigation-left"><img src="images/Vector_left.svg" class="arrow-left" alt="arrow-left" /></div>
-                <div class="services-navigation-right"><img src="images/Vector_right.svg" class="arrow-left" alt="arrow-left" /></div>
+            <div className="services-navigation">
+                <div className="services-navigation-left"><img src="images/Vector_left.svg" className="arrow-left" alt="arrow-left" /></div>
+                <div className="services-navigation-right"><img src="images/Vector_right.svg" className="arrow-left" alt="arrow-left" /></div>
               </div>
           </div>
-          <div class="container-features">
-            <img src="images/placeholder-features.png" class="features-placeholder" alt="features-placeholder" />
-            <div class="features-text-title">
-              <div class="features-title">Well thought with super easy to use</div>
-              <div class="features-text">As we approached the palace I could see through the great windows of the first floor the brilliantly illuminated audience chamber of Than Kosis. The immense hall was crowded with nobles and their women.</div>
-              <div class="ultimate-result">
+          <div className="container-features">
+            <img src="images/placeholder-features.png" className="features-placeholder" alt="features-placeholder" />
+            <div className="features-text-title">
+              <div className="features-title">Well thought with super easy to use</div>
+              <div className="features-text">As we approached the palace I could see through the great windows of the first floor the brilliantly illuminated audience chamber of Than Kosis. The immense hall was crowded with nobles and their women.</div>
+              <div className="ultimate-result">
                 <img src="images/100 icon.svg" alt="100-icon" />
-                <div class="ultimate-result-text">Ultimate Result</div>
+                <div className="ultimate-result-text">Ultimate Result</div>
               </div>
-              <div class="minimal-design">
+              <div className="minimal-design">
                   <img src="images/Bag icon.svg" alt="bag-icon" />
-                  <div class="minimal-design-text">Minimal Design</div>
+                  <div className="minimal-design-text">Minimal Design</div>
               </div>
             </div>
           </div>
-          <div class="container-our-works">
-            <div class="our-works-logo">— our works</div>
-            <div class="our-works-title-switchers">
-              <div class="our-works-title">Discover our Work</div>
-              <div class="our-works-switchers">
-                <div class="our-works-switcher">All</div>
-                <div class="our-works-switcher">Branding</div>
-                <div class="our-works-switcher">Web</div>
-                <div class="our-works-switcher">Development</div>
-                <div class="our-works-switcher">Films</div>
+          <div className="container-our-works">
+            <div className="our-works-logo">— our works</div>
+            <div className="our-works-title-switchers">
+              <div className="our-works-title">Discover our Work</div>
+              <div className="our-works-switchers">
+                <div className="our-works-switcher">All</div>
+                <div className="our-works-switcher">Branding</div>
+                <div className="our-works-switcher">Web</div>
+                <div className="our-works-switcher">Development</div>
+                <div className="our-works-switcher">Films</div>
               </div>
             </div>
-            <div class="our-works-placeholders-1">
-              <img src="images/placeholder-our-works.png" class="our-works-placeholder" alt="our-works-placeholder" />
-              <img src="images/placeholder-our-works.png" class="our-works-placeholder" alt="our-works-placeholder" />
-              <img src="images/placeholder-our-works.png" class="our-works-placeholder" alt="our-works-placeholder" />
+            <div className="our-works-placeholders-1">
+              <img src="images/placeholder-our-works.png" className="our-works-placeholder" alt="our-works-placeholder" />
+              <img src="images/placeholder-our-works.png" className="our-works-placeholder" alt="our-works-placeholder" />
+              <img src="images/placeholder-our-works.png" className="our-works-placeholder" alt="our-works-placeholder" />
             </div>
-            <div class="our-works-placeholders-2">
-                <img src="images/placeholder-our-works.png" class="our-works-placeholder" alt="our-works-placeholder" />
-                <img src="images/placeholder-our-works.png" class="our-works-placeholder" alt="our-works-placeholder" />
-                <img src="images/placeholder-our-works.png" class="our-works-placeholder" alt="our-works-placeholder" />
+            <div className="our-works-placeholders-2">
+                <img src="images/placeholder-our-works.png" className="our-works-placeholder" alt="our-works-placeholder" />
+                <img src="images/placeholder-our-works.png" className="our-works-placeholder" alt="our-works-placeholder" />
+                <img src="images/placeholder-our-works.png" className="our-works-placeholder" alt="our-works-placeholder" />
             </div>
-            <div class="our-works-text-button">
-              <div class="our-works-text">It picks up the words on the page and displays ads that are similar to those words. Then when someone either performs an action or clicks on your page you will get paid.</div>
-              <div class="our-works-button">
-                  <div class="text-button">our works</div>
+            <div className="our-works-text-button">
+              <div className="our-works-text">It picks up the words on the page and displays ads that are similar to those words. Then when someone either performs an action or clicks on your page you will get paid.</div>
+              <div className="our-works-button">
+                  <div className="text-button">our works</div>
                 </div>
             </div>
           </div>
-          <div class="container-testimonials">
-            <div class="testimonials-logo-text-nav">
-              <div class="testimonials-logo">— Testimonials</div>
-              <div class="testimonials-text">"Professionals in their craft! All products were super great with strong attention to details, and overall vibe"</div>
-              <div class="testimonials-name-position">
-                  <div class="testimonials-name">Polina Kuzina</div>
-                  <div class="testimonials-position">Manager at Craftwork</div>
+          <div className="container-testimonials">
+            <div className="testimonials-logo-text-nav">
+              <div className="testimonials-logo">— Testimonials</div>
+              <div className="testimonials-text">"Professionals in their craft! All products were super great with strong attention to details, and overall vibe"</div>
+              <div className="testimonials-name-position">
+                  <div className="testimonials-name">Polina Kuzina</div>
+                  <div className="testimonials-position">Manager at Craftwork</div>
               </div>
-              <div class="testimonials-navigation">
-                  <div class="testimonials-navigation-left"><img src="images/Vector_left.svg" class="arrow-left" alt="arrow-left" /></div>
-                  <div class="testimonials-navigation-right"><img src="images/Vector_right.svg" class="arrow-left" alt="arrow-left" /></div>
+              <div className="testimonials-navigation">
+                  <div className="testimonials-navigation-left"><img src="images/Vector_left.svg" className="arrow-left" alt="arrow-left" /></div>
+                  <div className="testimonials-navigation-right"><img src="images/Vector_right.svg" className="arrow-left" alt="arrow-left" /></div>
               </div>
             </div>
-            <img src="images/placeholder-testimonial.png" class="testimonial-placeholder" alt="testimonial-placeholder" />
+            <img src="images/placeholder-testimonial.png" className="testimonial-placeholder" alt="testimonial-placeholder" />
           </div>
-          <div class="container-clients">
-            <div class="clients-title-text">
-              <div class="clients-title">Our Clients</div>
-              <div class="clients-logo-text">
-                <div class="clients-logo">— We worked with</div>
-                <div class="clients-text">Our favorite brands are our friends! We help them to achieve their goals, they help us to stay sharp.</div>
+          <div className="container-clients">
+            <div className="clients-title-text">
+              <div className="clients-title">Our Clients</div>
+              <div className="clients-logo-text">
+                <div className="clients-logo">— We worked with</div>
+                <div className="clients-text">Our favorite brands are our friends! We help them to achieve their goals, they help us to stay sharp.</div>
               </div>
             </div>
-            <div class="clients-brands">
-              <img src="images/xiaomi.svg" class="clients-brand" alt="clients-brand" />
-              <img src="images/tinder.svg" class="clients-brand" alt="clients-brand" />
-              <img src="images/apple.svg" class="clients-brand" alt="clients-brand" />
-              <img src="images/nike.svg" class="clients-brand" alt="clients-brand" />
-              <img src="images/amd.svg" class="clients-brand" alt="clients-brand" />
+            <div className="clients-brands">
+              <img src="images/xiaomi.svg" className="clients-brand" alt="clients-brand" />
+              <img src="images/tinder.svg" className="clients-brand" alt="clients-brand" />
+              <img src="images/apple.svg" className="clients-brand" alt="clients-brand" />
+              <img src="images/nike.svg" className="clients-brand" alt="clients-brand" />
+              <img src="images/amd.svg" className="clients-brand" alt="clients-brand" />
             </div>
           </div>
           </div>
           <footer>
-            <div class="container-footer">
-            <div class="footer-logo-menu-form">
-              <div class="footer-logo">Gravity</div>
-              <div class="footer-menu">
-                <a href="#" class="footer-menu-href">Travel</a>
-                <a href="#" class="footer-menu-href">Works</a>
-                <a href="#" class="footer-menu-href">About Us</a>
-                <a href="#" class="footer-menu-href">Contacts</a>
+            <div className="container-footer">
+            <div className="footer-logo-menu-form">
+              <div className="footer-logo">Gravity</div>
+              <div className="footer-menu">
+                <a href="#" className="footer-menu-href">Travel</a>
+                <a href="#" className="footer-menu-href">Works</a>
+                <a href="#" className="footer-menu-href">About Us</a>
+                <a href="#" className="footer-menu-href">Contacts</a>
               </div>
-              <form class="footer-forms"> 
-                <input class="footer-input"  type="email" placeholder="Email" />
-                <button class="footer-button" type="button">SENT</button>
+              <form className="footer-forms"> 
+                <input className="footer-input"  type="email" placeholder="Email" />
+                <button className="footer-button" type="button">SENT</button>
               </form>
             </div>
-            <div class="footer-divider"></div>
-            <div class="footer-submenu-social">
-              <div class="footer-submenu">
-                <a href="#" class="footer-submenu-href">Terms</a>
-                <a href="#" class="footer-submenu-href">Promo</a>
-                <a href="#" class="footer-submenu-href">Download</a>
-                <a href="#" class="footer-submenu-href">News</a>
+            <div className="footer-divider"></div>
+            <div className="footer-submenu-social">
+              <div className="footer-submenu">
+                <a href="#" className="footer-submenu-href">Terms</a>
+                <a href="#" className="footer-submenu-href">Promo</a>
+                <a href="#" className="footer-submenu-href">Download</a>
+                <a href="#" className="footer-submenu-href">News</a>
               </div>
-              <div class="footer-social">
+              <div className="footer-social">
                 <img src="images/twitter.svg" alt="twitter-icon" />
                 <img src="images/linkedin.svg" alt="linkedin-icon" />
                 <img src="images/google.svg" alt="google-icon" />
@@ -197,15 +197,15 @@ function App() {
             </div>
             </div>
           </footer>
-          <div class="container-toggle" id="container-toggle">
-            <div class="exit-menu" id="exit-menu" onClick={removeClass}>X</div>
-            <div class="container-menu">
-              <a href="#" class="menu-href">HOME</a>
-              <a href="#" class="menu-href">ABOUT</a>
-              <a href="#" class="menu-href">CONTACT</a>
+          <div className="container-toggle" id="container-toggle">
+            <div className="exit-menu" id="exit-menu" onClick={removeClass}>X</div>
+            <div className="container-menu">
+              <a href="#" className="menu-href">HOME</a>
+              <a href="#" className="menu-href">ABOUT</a>
+              <a href="#" className="menu-href">CONTACT</a>
             </div>
           </div>
-      </body>
+        </div>
     )
 }
 
