@@ -1,20 +1,27 @@
 {
   "name": "static-webpage",
-  "version": "1.0.0",
-  "description": "",
-  "main": "index.js",
+  "version": "0.1.0",
+  "private": true,
+  "dependencies": {
+    "react": "^16.8.3",
+    "react-dom": "^16.8.3",
+    "react-script-tag": "^1.1.2",
+    "react-scripts": "2.1.5"
+  },
   "scripts": {
-    "start": "serve -s src",
-    "deploy": "now && now alias"
+    "start": "react-scripts start",
+    "build": "react-scripts build",
+    "now-build": "react-scripts build",
+    "test": "CI=true react-scripts test",
+    "eject": "react-scripts eject"
   },
-  "repository": {
-    "type": "git",
-    "url": "git+https://github.com/webkwik/static-webpage.git"
+  "eslintConfig": {
+    "extends": "react-app"
   },
-  "author": "",
-  "license": "ISC",
-  "bugs": {
-    "url": "https://github.com/webkwik/static-webpage/issues"
-  },
-  "homepage": "https://github.com/webkwik/static-webpage#readme"
+  "browserslist": [
+    ">0.2%",
+    "not dead",
+    "not ie <= 11",
+    "not op_mini all"
+  ]
 }

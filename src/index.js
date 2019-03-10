@@ -1,3 +1,9 @@
-const mySiema = new Siema();
-document.querySelector('.services-navigation-left').addEventListener('click', () => mySiema.prev());
-document.querySelector('.services-navigation-right').addEventListener('click', () => mySiema.next());
+import React from 'react';
+import ReactDOM from 'react-dom';
+import './index.css';
+import App from './App';
+import * as serviceWorker from './serviceWorker';
+
+ReactDOM.render(<App />, document.getElementById('root'));
+
+serviceWorker.unregister();
