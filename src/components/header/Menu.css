@@ -1,0 +1,11 @@
+.menu {
+  width: 34px;
+  height: 23px;
+  cursor: pointer;
+}
+
+
+.visibility-icon-menu {
+  visibility: hidden;
+}
+  
