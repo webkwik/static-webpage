@@ -1,8 +1,8 @@
 import React, {Component} from 'react';
 import './Header.css';
-import Logo from './header/Logo';
-import Search from './header/Search';
-import Menu from './header/Menu';
+import Logo from './logo/Logo';
+import Search from './search/Search';
+import Menu from './menu/Menu';
 
 class Header extends Component {
     render() {
