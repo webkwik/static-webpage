@@ -3,40 +3,31 @@ import './Search.css';
 import icon from './Search.svg';
 
 class Search extends Component {
+    constructor() {
+        super()
+        this.state = {
+            isActive: true
+        }
+    }
+
+    searchIcon=()=>{
+        this.setState({
+           isActive: !this.state.isActive
+         })
+         console.log(this.state.isActive)
+   }
+
     render() {
         return (
             <div className="icon-input">
-                <form id="form" className="search-form"> 
+                <form id="form" className={this.state.isActive===true ? "search-form" : "search-form for-form-search"}> 
                     <input className="search-input"  type="search" placeholder="search" />
-                    <button className="button" type="button" id="button" onClick={removeElementSearch}>Close</button>
+                    <button className="button" type="button" id="button" onClick={this.searchIcon}>Close</button>
                 </form>
-                <img src={icon} className="search-icon" id="search" alt="search-icon" onClick={displayElementSearch} />
+                <img src={icon} className={this.state.isActive===true ? "search-icon" : "search-icon for-icon-search"} id="search" alt="search-icon" onClick={this.searchIcon} />
           </div>
         )
     }
 }
-
-function displayElementSearch() {
-    var searchIcon = document.getElementById("search");
-    var form = document.getElementById("form");
-    var logo = document.getElementById("logo");
-    if (window.matchMedia("(max-width: 960px)").matches) {
-        form.classList.add("for-form-search");
-        searchIcon.classList.add("for-icon-search");
-        logo.classList.add("for-icon-search");
-      } else {
-        form.classList.add("for-form-search");
-        searchIcon.classList.add("for-icon-search");
-      }
-  }
-  
-  function removeElementSearch() {
-    var searchIcon = document.getElementById("search");
-    var form = document.getElementById("form");
-    var logo = document.getElementById("logo");
-    form.classList.remove("for-form-search");
-    searchIcon.classList.remove("for-icon-search");
-    logo.classList.remove("for-icon-search");
-  }
 
 export default Search
