@@ -185,25 +185,8 @@ function App() {
             </div>
             </div>
           </footer>
-          <div className="container-toggle" id="container-toggle">
-            <div className="exit-menu" id="exit-menu" onClick={removeClass}>X</div>
-            <div className="container-menu">
-              <a href="#" className="menu-href">HOME</a>
-              <a href="#" className="menu-href">ABOUT</a>
-              <a href="#" className="menu-href">CONTACT</a>
-            </div>
-          </div>
         </React.Fragment>
     )
-}
-
-
-
-function removeClass() {
-  var menu = document.getElementById("menu-toggle");
-  var containerToggle = document.getElementById("container-toggle");
-  containerToggle.classList.remove("open-menu");
-  menu.classList.remove("visibility-icon-menu");
 }
 
 function displayVideoYoutube() {

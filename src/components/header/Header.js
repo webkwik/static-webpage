@@ -1,7 +1,6 @@
 import React, {Component} from 'react';
 import './Header.css';
-import Logo from './logo/Logo';
-import Search from './search/Search';
+import LogoSearch from './logoSearch/LogoSearch';
 import Menu from './menu/Menu';
 
 class Header extends Component {
@@ -9,9 +8,8 @@ class Header extends Component {
         return (
             <React.Fragment>
                 <header>
-                    <div className="container-header">
-                        <Logo />
-                        <Search />
+                    <div className="container-header">  
+                        <LogoSearch />
                         <Menu />
                     </div>
                 </header>

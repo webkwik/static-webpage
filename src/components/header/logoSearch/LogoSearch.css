@@ -51,6 +51,13 @@
   opacity: 0;
   z-index: 99;
 }
+
+.logo {
+  font-family: 'Montserrat', sans-serif;
+  font-weight: bold;
+  font-size: 24px;
+  cursor: default;
+}
   
 @media only screen and (max-width: 960px) {
     .search-icon{
@@ -60,6 +67,10 @@
     
     .icon-input {
         order: -1;
+      }
+
+    .logo {
+        margin-left: -160px;
       }
 
 }
