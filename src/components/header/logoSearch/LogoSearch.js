@@ -2,6 +2,7 @@ import React, {Component} from 'react';
 import './LogoSearch.css';
 import icon from './Search.svg';
 import Media from 'react-media';
+import classNames from 'classnames';
 
 class LogoSearch extends Component {
     constructor() {
@@ -19,18 +20,30 @@ class LogoSearch extends Component {
    }
 
     render() {
+        var logoClass = classNames ({
+            logo: true,
+            'for-icon-search': !this.state.isActive
+        })
+        var searchFormClass = classNames ({
+            'search-form': true,
+            'for-form-search': !this.state.isActive
+        })
+        var searchIconClass = classNames ({
+            'search-icon': true,
+            'for-icon-search': !this.state.isActive
+        })
         return (
             <React.Fragment>
                 <Media query="(max-width: 960px)">{
-                    matches => matches ? (<div className={this.state.isActive ? "logo" : "logo for-icon-search"} id="logo">Gravity</div>) : (<div className="logo" id="logo">Gravity</div>)
+                    matches => matches ? (<div className={logoClass} id="logo">Gravity</div>) : (<div className="logo" id="logo">Gravity</div>)
                 }
                 </Media>
             <div className="icon-input">
-                <form id="form" className={this.state.isActive===true ? "search-form" : "search-form for-form-search"}> 
+                <form id="form" className={searchFormClass}> 
                     <input className="search-input"  type="search" placeholder="search" />
                     <button className="button" type="button" id="button" onClick={this.searchIcon}>Close</button>
                 </form>
-                <img src={icon} className={this.state.isActive===true ? "search-icon" : "search-icon for-icon-search"} id="search" alt="search-icon" onClick={this.searchIcon} />
+                <img src={icon} className={searchIconClass} id="search" alt="search-icon" onClick={this.searchIcon} />
           </div>
           </React.Fragment>
         )

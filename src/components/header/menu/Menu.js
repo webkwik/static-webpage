@@ -1,6 +1,7 @@
 import React, {Component} from "react";
 import './Menu.css';
 import MenuIcon from './MenuIcon.svg';
+import classNames from 'classnames';
 
 class Menu extends Component {
     constructor() {
@@ -17,11 +18,19 @@ class Menu extends Component {
          console.log("menu " + this.state.isActive)
    }
     render() {
+        var menuClass = classNames({
+          menu: true,
+          'visibility-icon-menu': !this.state.isActive
+        })
+        var toggleClass = classNames({
+          'container-toggle': true,
+          'open-menu': !this.state.isActive
+        })
+
         return (
             <React.Fragment>
-            <div className={this.state.isActive ? "menu" : "menu visibility-icon-menu"} id="menu-toggle"><img src={MenuIcon} alt="menu-icon" onClick={this.toggleMenu} /></div>
-
-            <div className={this.state.isActive ? "container-toggle" : "container-toggle open-menu"} id="container-toggle">
+            <div className={menuClass} id="menu-toggle"><img src={MenuIcon} alt="menu-icon" onClick={this.toggleMenu} /></div>
+            <div className={toggleClass} id="container-toggle">
             <div className="exit-menu" id="exit-menu" onClick={this.toggleMenu}>X</div>
             <div className="container-menu">
               <a href="#" className="menu-href">HOME</a>
