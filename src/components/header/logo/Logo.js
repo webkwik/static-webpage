@@ -5,7 +5,7 @@ import classNames from 'classnames';
 
 class Logo extends Component {    
     render() {
-        let logoClass = classNames ({
+        const logoClass = classNames ({
             logo: true,
             'for-icon-search': !this.props.isActive
         })

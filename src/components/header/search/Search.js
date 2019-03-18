@@ -5,11 +5,11 @@ import classNames from 'classnames';
 
 class Search extends Component {
     render() {
-        let searchFormClass = classNames ({
+        const searchFormClass = classNames ({
             'search-form': true,
             'for-form-search': !this.props.isActive
         })
-        let searchIconClass = classNames ({
+        const searchIconClass = classNames ({
             'search-icon': true,
             'for-icon-search': !this.props.isActive
         })

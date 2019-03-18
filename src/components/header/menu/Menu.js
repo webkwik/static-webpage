@@ -18,11 +18,11 @@ class Menu extends Component {
          console.log("menu " + this.state.isActive)
    }
     render() {
-        var menuClass = classNames({
+        const menuClass = classNames({
           menu: true,
           'visibility-icon-menu': !this.state.isActive
         })
-        var toggleClass = classNames({
+        const toggleClass = classNames({
           'container-toggle': true,
           'open-menu': !this.state.isActive
         })
