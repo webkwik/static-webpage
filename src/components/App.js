@@ -1,24 +1,12 @@
 import React from 'react';
 import './App.css';
+import Header from './header/Header'
 
 function App() {
     return (
-      <div>      
+      <React.Fragment>      
         <div className="container">
-          <header>
-            <div className="container-header">
-              <div className="logo" id="logo">Gravity</div>
-              <div className="icon-input">
-                <form id="form" className="search-form"> 
-                  <input className="search-input"  type="search" placeholder="search" />
-                  <button className="button" type="button" id="button" onClick={removeElementSearch}>Close</button>
-                </form>
-                <img src="images/Search.svg" className="search-icon" id="search" alt="search-icon" onClick={displayElementSearch} />
-              </div>
-              <div className="menu" id="menu-toggle"><img src="images/MenuIcon.svg" alt="menu-icon" onClick={addClass} /></div>
-        </div>
-      
-          </header>
+          <Header />
           <div className="container-slider">
             <div className="container-slider-item1">
               <div className="slider-title-text">
@@ -197,55 +185,8 @@ function App() {
             </div>
             </div>
           </footer>
-          <div className="container-toggle" id="container-toggle">
-            <div className="exit-menu" id="exit-menu" onClick={removeClass}>X</div>
-            <div className="container-menu">
-              <a href="#" className="menu-href">HOME</a>
-              <a href="#" className="menu-href">ABOUT</a>
-              <a href="#" className="menu-href">CONTACT</a>
-            </div>
-          </div>
-        </div>
+        </React.Fragment>
     )
-}
-
-
-
-function displayElementSearch() {
-  var searchIcon = document.getElementById("search");
-  var form = document.getElementById("form");
-  var logo = document.getElementById("logo");
-  if (window.matchMedia("(max-width: 960px)").matches) {
-      form.classList.add("for-form-search");
-      searchIcon.classList.add("for-icon-search");
-      logo.classList.add("for-icon-search");
-    } else {
-      form.classList.add("for-form-search");
-      searchIcon.classList.add("for-icon-search");
-    }
-}
-
-function removeElementSearch() {
-  var searchIcon = document.getElementById("search");
-  var form = document.getElementById("form");
-  var logo = document.getElementById("logo");
-  form.classList.remove("for-form-search");
-  searchIcon.classList.remove("for-icon-search");
-  logo.classList.remove("for-icon-search");
-}
-
-function addClass() {
-  var menu = document.getElementById("menu-toggle");
-  var containerToggle = document.getElementById("container-toggle");
-  containerToggle.classList.add("open-menu");
-  menu.classList.add("visibility-icon-menu");
-}
-
-function removeClass() {
-  var menu = document.getElementById("menu-toggle");
-  var containerToggle = document.getElementById("container-toggle");
-  containerToggle.classList.remove("open-menu");
-  menu.classList.remove("visibility-icon-menu");
 }
 
 function displayVideoYoutube() {
