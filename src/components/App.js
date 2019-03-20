@@ -2,6 +2,7 @@ import React from 'react';
 import './App.css';
 import Header from './header/Header'
 import ContainerSlider from './containerSlider/ContainerSlider';
+import ContainerAbout from './containerAbout/ContainerAbout';
 
 function App() {
     return (
@@ -9,21 +10,7 @@ function App() {
         <div className="container">
           <Header />
           <ContainerSlider />
-          <div className="container-about">
-            <img src="images/placeholder-about.png" className="placeholder-about" alt="placeholder-about" />
-            <div className="about-title-text">
-              <div className="about-title">We solve digital problems with an outstanding creative flare</div>
-              <div className="about-text">The best time to view the moon, obviously, is at night when there are few clouds and the weather is accommodating for a long and lasting study.</div>
-              <div className="about-text margin-for-about">For most of us, the idea of astronomy is something we directly connect to “stargazing”, telescopes and seeing magnificent displays in the heavens.</div>
-              <div className="about-user">
-                <img src="images/about-user.png" className="about-user-img" alt="about-user-img" />
-                <div className="about-name-position">
-                  <div className="about-name">Denis Shepovalov</div>
-                  <div className="about-position">Co-Founder & CEO</div>
-                </div>
-              </div>
-            </div>
-          </div>
+          <ContainerAbout />
           <div className="services-logo">— Services</div>
           <div className="services-text-menu">
             <div className="services-text">We love work hard and explore new things that’s why we cover lot of things. Check our service list and view details</div>

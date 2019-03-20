@@ -26,13 +26,7 @@
   cursor: pointer;
 }
 
-.container-about {
-  display: flex;
-  justify-items: auto;
-  margin-top: 137px;
-}
-
-.about-title, .services-text {
+.services-text {
   width: 540px;
   font-family: 'Fira Sans', sans-serif;
   font-weight: 600;
@@ -43,28 +37,7 @@
   margin-top: 40px;
 }
 
-.about-text {
-  width: 445px;
-  font-family: 'Fira Sans', sans-serif;
-  line-height: 28px;
-  font-size: 18px;
-  color: #222222;
-  opacity: 0.7;
-  margin-top: 30px;
-}
-
-.margin-for-about {
-  margin-top: 20px;
-}
-
-.about-user {
-  display: flex;
-  justify-items: auto;
-  width: 285px;
-  margin-top: 61px;
-}
-
-.about-name, .testimonials-name {
+.testimonials-name {
   font-family: 'Fira Sans', sans-serif;
   font-style: normal;
   font-weight: 500;
@@ -74,7 +47,7 @@
   margin-left: 30px;
 }
 
-.about-position, .testimonials-position {
+.testimonials-position {
   height: 21px;
   font-family: 'Fira Sans', sans-serif;
   line-height: 28px;
@@ -82,10 +55,6 @@
   color: #222222;
   opacity: 0.7;
   margin-left: 30px;
-}
-
-.about-title-text {
-  margin-left: 90px;
 }
 
 .services-logo, .our-works-logo, .testimonials-logo, .clients-logo {
@@ -445,15 +414,6 @@ footer {
 /* Desktop Styles */
 @media only screen and (min-width: 961px) and (max-width: 1200px){
  
-  .about-title {
-    width: 85%;
-    margin-top: 0;
-  }
-
-  .about-text {
-    width: 80%;
-  }
-
   .services-menu-items {
     margin-left: 0;
   }
@@ -470,37 +430,14 @@ footer {
 
 /* Tablet Styles */
 @media only screen and (max-width: 960px) {
-  .about-text, .services-text {
+  .services-text {
     width: 100%;
     text-align: center;
   }
 
-  .container-about, .services-text-menu, .container-features, .our-works-text-button {
+  .services-text-menu, .container-features, .our-works-text-button {
     margin-left: 5%;
     margin-right: 5%;
-  }
-
-  .container-about {
-    display: block;
-    margin-top: 20px;
-  }
-
-  .placeholder-about {
-    display: none;
-  }
-
-  .about-title {
-    width: 100%;
-    text-align: center;
-  }
-
-  .about-title-text {
-    margin-left: 0;
-    text-align: center;
-  }
-
-  .about-user {
-    margin: 40px auto 0 auto;
   }
 
   .services-text-menu {
