@@ -1,0 +1,20 @@
+.placeholder {
+    width: 665px;
+    height: 840px;
+  }
+
+.container-slider-item2 {
+    margin-left: 90px;
+  }
+
+@media only screen and (min-width: 961px) and (max-width: 1200px){
+    .container-slider-item2 {
+      display: none;
+    }
+}
+
+@media only screen and (max-width: 960px) {
+    .container-slider-item2 {
+      display: none;
+    }
+}

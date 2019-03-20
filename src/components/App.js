@@ -1,40 +1,14 @@
 import React from 'react';
 import './App.css';
 import Header from './header/Header'
+import ContainerSlider from './containerSlider/ContainerSlider';
 
 function App() {
     return (
       <React.Fragment>      
         <div className="container">
           <Header />
-          <div className="container-slider">
-            <div className="container-slider-item1">
-              <div className="slider-title-text">
-                <div className="slider-title">Work around you and your team</div>
-                <div className="slider-text">From ads that dance or sing to MTV-like commercials, online advertisers are now using a new type of technology “rich media” to attract consumers.</div>
-              </div>
-              <div className="blue-button">
-                <div className="text-button">get started</div>
-              </div>
-              <div className="loader">
-                  <div className="loader-text">01</div>
-                  <div className="loader-bg">
-                    <div className="loader-active"></div>
-                  </div>
-                  <div className="loader-text">03</div>
-              </div>
-              </div>
-              <div className="container-slider-item2"><img src="images/placeholder.png" className="placeholder" alt="placeholder" /></div>
-              <div className="video" id="video">
-                <div className="button-play" id="button-play" onClick={play}>
-                  <img src="images/Polygon.svg" className="play" alt="play" />
-                </div>
-              </div>
-              <div className="video-youtube" id="video-youtube">
-                  <iframe width="400" height="310" src="https://www.youtube.com/embed/h2Jdj4iLIUU?&enablejsapi=1&autoplay=0" allow="autoplay" frameborder="0" className="iframe-video" title="youtube"></iframe>
-                  <div className="exit-video" id="exit-video" onClick={stop}>X</div>
-              </div>
-          </div>
+          <ContainerSlider />
           <div className="container-about">
             <img src="images/placeholder-about.png" className="placeholder-about" alt="placeholder-about" />
             <div className="about-title-text">
@@ -187,40 +161,6 @@ function App() {
           </footer>
         </React.Fragment>
     )
-}
-
-function displayVideoYoutube() {
-  var video = document.getElementById("video");
-  var videoYoutube = document.getElementById("video-youtube");
-  videoYoutube.classList.add("for-video-youtube");
-  video.classList.add("for-video");
-}
-
-function removeElementVideo() {
-  var video = document.getElementById("video");
-  var videoYoutube = document.getElementById("video-youtube");
-  videoYoutube.classList.remove("for-video-youtube");
-  video.classList.remove("for-video");
-}
-
-function stopVideo() {
-  var frameVideo = document.getElementsByClassName("iframe-video");
-  frameVideo.item(0).contentWindow.postMessage('{"event":"command","func":"pauseVideo","args":""}', '*');
-}
-
-function playVideo() {
-  var frameVideo = document.getElementsByClassName("iframe-video");
-  frameVideo.item(0).contentWindow.postMessage('{"event":"command","func":"playVideo","args":""}', '*');
-}
-
-function play() {
-  playVideo();
-  displayVideoYoutube();
-}
-
-function stop() {
-  stopVideo();
-  removeElementVideo();
 }
 
 export default App
