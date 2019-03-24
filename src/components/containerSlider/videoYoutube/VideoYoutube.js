@@ -2,36 +2,47 @@ import React, {Component} from 'react';
 import './VideoYoutube.css';
 import classNames from 'classnames';
 import polygon from './Polygon.svg';
+import YouTube from 'react-youtube';
+import Media from 'react-media';
 
 class VideoYoutube extends Component {    
   constructor() {
     super()
     this.state = {
-        isActive: true
-    }
-}
-  
-stopVideo() {
-  const frameVideo = document.getElementsByClassName("iframe-video");
-  frameVideo.item(0).contentWindow.postMessage('{"event":"command","func":"pauseVideo","args":""}', '*');
+        isActive: true,
+        player: null
+    };
+    this.onReady = this.onReady.bind(this);
+    this.onPlayVideo = this.onPlayVideo.bind(this);
+    this.onPauseVideo = this.onPauseVideo.bind(this);
 }
 
-playVideo() {
-  const frameVideo = document.getElementsByClassName("iframe-video");
-  frameVideo.item(0).contentWindow.postMessage('{"event":"command","func":"playVideo","args":""}', '*');
+onReady(event) {
+  this.setState({
+    player: event.target,
+  });
 }
+
+onPlayVideo() {
+  this.state.player.playVideo();
+}
+
+onPauseVideo() {
+  this.state.player.pauseVideo();
+}
+  
 clickVideo=()=>{
     this.setState({
        isActive: !this.state.isActive
      })
      console.log("video " + this.state.isActive)
-     if(this.state.isActive){
-      this.playVideo()
-     } else{
-      this.stopVideo()
-     }
-
+     if(this.state.isActive) {
+      this.onPlayVideo();
+    } else {
+      this.onPauseVideo();
+    }
 }
+
     render() {
         const videoClass = classNames ({
             'video': true,
@@ -42,6 +53,22 @@ clickVideo=()=>{
           'for-video-youtube': !this.state.isActive
         })
 
+        const opts = {
+          height: '310',
+          width: '400',
+          playerVars: { // https://developers.google.com/youtube/player_parameters
+            autoplay: 0
+          }
+        }
+
+        const optsMob = {
+          height: '310',
+          width: '280',
+          playerVars: { // https://developers.google.com/youtube/player_parameters
+            autoplay: 0
+          }
+        }
+
         return (
             <React.Fragment>
             <div className={videoClass} id="video">
@@ -50,7 +77,11 @@ clickVideo=()=>{
             </div>
           </div>
           <div className={youtubeVideoClass} id="video-youtube">
-              <iframe width="400" height="310" src="https://www.youtube.com/embed/h2Jdj4iLIUU?&enablejsapi=1&autoplay=0" allow="autoplay" frameborder="0" className="iframe-video" title="youtube"></iframe>
+              <Media query="(max-width: 960px)">{
+                matches => matches ? (<YouTube videoId="h2Jdj4iLIUU" opts={optsMob} onReady={this.onReady} />) : (<YouTube videoId="h2Jdj4iLIUU" opts={opts} onReady={this.onReady} />)
+                }
+              </Media>
+              
               <div className="exit-video" id="exit-video" onClick={this.clickVideo}>X</div>
           </div>
           </React.Fragment>
