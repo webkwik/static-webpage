@@ -3,6 +3,7 @@ import './VideoYoutube.css';
 import classNames from 'classnames';
 import polygon from './Polygon.svg';
 import YouTube from 'react-youtube';
+import Media from 'react-media';
 
 class VideoYoutube extends Component {    
   constructor() {
@@ -53,22 +54,19 @@ clickVideo=()=>{
           'for-video-youtube': !this.state.isActive
         })
 
-        let opts = null;
-        if (window.innerWidth > 960) {
-          opts = {
-            height: '310',
-            width: '400',
-            playerVars: { // https://developers.google.com/youtube/player_parameters
-              autoplay: 1
-            }
+        const opts = {
+          height: '310',
+          width: '400',
+          playerVars: { // https://developers.google.com/youtube/player_parameters
+            autoplay: 1
           }
-        } else {
-          opts = {
-            height: '310',
-            width: '280',
-            playerVars: { // https://developers.google.com/youtube/player_parameters
-              autoplay: 1
-            }
+        }
+ 
+        const optsMob = {
+          height: '310',
+          width: '280',
+          playerVars: { // https://developers.google.com/youtube/player_parameters
+            autoplay: 1
           }
         }
 
@@ -80,7 +78,12 @@ clickVideo=()=>{
             </div>
           </div>
           <div className={youtubeVideoClass} id="video-youtube">
-                <YouTube videoId="h2Jdj4iLIUU" opts={opts} onReady={this.onReady} />
+
+          <Media query="(max-width: 960px)">{
+                <YouTube videoId="h2Jdj4iLIUU" opts={matches => matches ? opts : optsMob} onReady={this.onReady} />
+              }
+          </Media>
+
                 <div className="exit-video" id="exit-video" onClick={this.clickVideo}>X</div>
           </div>
           </React.Fragment>
