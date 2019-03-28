@@ -1,0 +1,17 @@
+.menu-item {
+  list-style-type: none;
+  width: 189px;
+  font-family: "Fira Sans", sans-serif;
+  line-height: 28px;
+  font-size: 18px;
+  color: #222222;
+  opacity: 0.5;
+  margin-top: 21px;
+}
+
+@media only screen and (max-width: 960px) {
+  .menu-item {
+    font-size: 14px;
+    width: 100%;
+  }
+}
