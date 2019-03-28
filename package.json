@@ -9,7 +9,8 @@
     "react-media": "^1.9.2",
     "react-responsive": "^6.1.1",
     "react-script-tag": "^1.1.2",
-    "react-scripts": "2.1.5"
+    "react-scripts": "2.1.5",
+    "siema": "^1.5.1"
   },
   "scripts": {
     "start": "react-scripts start",

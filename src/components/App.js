@@ -2,7 +2,7 @@ import React from "react";
 import "./App.css";
 import Header from "./header/Header";
 import Services from "./services/Services";
-import ServicesTextMenu from "./services/servicesTextMenu/ServicesTextMenu";
+import SiemaSlider from "./services/siemaSlider/SiemaSlider";
 
 function App() {
   return (
@@ -91,40 +91,7 @@ function App() {
           </div>
         </div>
         <Services />
-        <div className="services-slider-nav">
-          <div className="siema">
-            <div>
-              <img
-                src="images/placeholder-services-video.png"
-                className="services-placeholder"
-                alt="services-placeholder"
-              />
-            </div>
-            <div>
-              <img
-                src="images/placeholder-services-video.png"
-                className="services-placeholder"
-                alt="services-placeholder"
-              />
-            </div>
-          </div>
-          <div className="services-navigation">
-            <div className="services-navigation-left">
-              <img
-                src="images/Vector_left.svg"
-                className="arrow-left"
-                alt="arrow-left"
-              />
-            </div>
-            <div className="services-navigation-right">
-              <img
-                src="images/Vector_right.svg"
-                className="arrow-left"
-                alt="arrow-left"
-              />
-            </div>
-          </div>
-        </div>
+        <SiemaSlider />
         <div className="container-features">
           <img
             src="images/placeholder-features.png"
