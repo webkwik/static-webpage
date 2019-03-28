@@ -3,93 +3,16 @@ import "./App.css";
 import Header from "./header/Header";
 import Services from "./services/Services";
 import SiemaSlider from "./services/siemaSlider/SiemaSlider";
+import ContainerSlider from './containerSlider/ContainerSlider';
+import ContainerAbout from './containerAbout/ContainerAbout';
 
 function App() {
-  return (
-    <React.Fragment>
-      <div className="container">
-        <Header />
-        <div className="container-slider">
-          <div className="container-slider-item1">
-            <div className="slider-title-text">
-              <div className="slider-title">Work around you and your team</div>
-              <div className="slider-text">
-                From ads that dance or sing to MTV-like commercials, online
-                advertisers are now using a new type of technology “rich media”
-                to attract consumers.
-              </div>
-            </div>
-            <div className="blue-button">
-              <div className="text-button">get started</div>
-            </div>
-            <div className="loader">
-              <div className="loader-text">01</div>
-              <div className="loader-bg">
-                <div className="loader-active" />
-              </div>
-              <div className="loader-text">03</div>
-            </div>
-          </div>
-          <div className="container-slider-item2">
-            <img
-              src="images/placeholder.png"
-              className="placeholder"
-              alt="placeholder"
-            />
-          </div>
-          <div className="video" id="video">
-            <div className="button-play" id="button-play" onClick={play}>
-              <img src="images/Polygon.svg" className="play" alt="play" />
-            </div>
-          </div>
-          <div className="video-youtube" id="video-youtube">
-            <iframe
-              width="400"
-              height="310"
-              src="https://www.youtube.com/embed/h2Jdj4iLIUU?&enablejsapi=1&autoplay=0"
-              allow="autoplay"
-              frameborder="0"
-              className="iframe-video"
-              title="youtube"
-            />
-            <div className="exit-video" id="exit-video" onClick={stop}>
-              X
-            </div>
-          </div>
-        </div>
-        <div className="container-about">
-          <img
-            src="images/placeholder-about.png"
-            className="placeholder-about"
-            alt="placeholder-about"
-          />
-          <div className="about-title-text">
-            <div className="about-title">
-              We solve digital problems with an outstanding creative flare
-            </div>
-            <div className="about-text">
-              The best time to view the moon, obviously, is at night when there
-              are few clouds and the weather is accommodating for a long and
-              lasting study.
-            </div>
-            <div className="about-text margin-for-about">
-              For most of us, the idea of astronomy is something we directly
-              connect to “stargazing”, telescopes and seeing magnificent
-              displays in the heavens.
-            </div>
-            <div className="about-user">
-              <img
-                src="images/about-user.png"
-                className="about-user-img"
-                alt="about-user-img"
-              />
-              <div className="about-name-position">
-                <div className="about-name">Denis Shepovalov</div>
-                <div className="about-position">Co-Founder & CEO</div>
-              </div>
-            </div>
-          </div>
-        </div>
+    return (
+      <React.Fragment>      
+        <div className="container">
+          <Header />
+          <ContainerSlider />
+          <ContainerAbout />
         <Services />
         <SiemaSlider />
         <div className="container-features">
@@ -307,48 +230,4 @@ function App() {
   );
 }
 
-function displayVideoYoutube() {
-  var video = document.getElementById("video");
-  var videoYoutube = document.getElementById("video-youtube");
-  videoYoutube.classList.add("for-video-youtube");
-  video.classList.add("for-video");
-}
-
-function removeElementVideo() {
-  var video = document.getElementById("video");
-  var videoYoutube = document.getElementById("video-youtube");
-  videoYoutube.classList.remove("for-video-youtube");
-  video.classList.remove("for-video");
-}
-
-function stopVideo() {
-  var frameVideo = document.getElementsByClassName("iframe-video");
-  frameVideo
-    .item(0)
-    .contentWindow.postMessage(
-      '{"event":"command","func":"pauseVideo","args":""}',
-      "*"
-    );
-}
-
-function playVideo() {
-  var frameVideo = document.getElementsByClassName("iframe-video");
-  frameVideo
-    .item(0)
-    .contentWindow.postMessage(
-      '{"event":"command","func":"playVideo","args":""}',
-      "*"
-    );
-}
-
-function play() {
-  playVideo();
-  displayVideoYoutube();
-}
-
-function stop() {
-  stopVideo();
-  removeElementVideo();
-}
-
-export default App;
+export default App

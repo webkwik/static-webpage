@@ -1,0 +1,33 @@
+.about-user {
+    display: flex;
+    justify-items: auto;
+    width: 285px;
+    margin-top: 61px;
+  }
+
+.about-name {
+    font-family: 'Fira Sans', sans-serif;
+    font-style: normal;
+    font-weight: 500;
+    line-height: 32px;
+    font-size: 22px;
+    color: #222222;
+    margin-left: 30px;
+}
+
+.about-position {
+    height: 21px;
+    font-family: 'Fira Sans', sans-serif;
+    line-height: 28px;
+    font-size: 18px;
+    color: #222222;
+    opacity: 0.7;
+    margin-left: 30px;
+}
+
+@media only screen and (max-width: 960px) {
+    .about-user {
+        margin: 40px auto 0 auto;
+      }
+}
+
