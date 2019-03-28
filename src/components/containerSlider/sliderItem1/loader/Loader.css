@@ -1,0 +1,39 @@
+.loader {
+    width: 346px;
+    height: 18px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-top: 190px;
+  }
+  
+.loader-text {
+    font-family: 'Fira Sans', sans-serif;
+    line-height: 28px;
+    font-size: 18px;
+    color: #222222;
+  }
+  
+.loader-bg {
+    width: 278px;
+    height: 2px;
+    background: #D7D4D4;
+  }
+  
+.loader-active {
+    width: 139px;
+    height: 2px;
+    background: #C6B393;
+  }
+
+@media only screen and (min-width: 961px) and (max-width: 1200px){
+    .loader {
+      display: none;
+    }
+}
+
+@media only screen and (max-width: 960px) {
+    .loader {
+        display: none;
+    }
+}

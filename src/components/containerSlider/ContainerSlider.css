@@ -1,0 +1,12 @@
+.container-slider {
+    margin-top: 60px;
+    display: flex;
+    justify-items: auto;
+  }
+
+@media only screen and (max-width: 960px) {
+    .container-slider {
+      flex-direction: column;
+      margin-bottom: -310px;
+    }
+}
