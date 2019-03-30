@@ -1,4 +1,5 @@
-.container, .container-footer {
+.container,
+.container-footer {
   margin: auto;
   width: 100%;
   max-width: 960px;
@@ -9,7 +10,7 @@
 }
 
 .footer-logo {
-  font-family: 'Montserrat', sans-serif;
+  font-family: "Montserrat", sans-serif;
   font-weight: bold;
   font-size: 24px;
   cursor: default;
@@ -18,23 +19,12 @@
 .our-works-button {
   width: 189px;
   height: 50px;
-  background: #4737FF;
+  background: #4737ff;
   display: flex;
   justify-content: center;
   align-self: center;
   margin-top: 56px;
   cursor: pointer;
-}
-
-.services-text {
-  width: 540px;
-  font-family: 'Fira Sans', sans-serif;
-  font-weight: 600;
-  line-height: 50px;
-  font-size: 40px;
-  letter-spacing: -1px;
-  color: #222222;
-  margin-top: 40px;
 }
 
 .testimonials-name {
@@ -49,7 +39,7 @@
 
 .testimonials-position {
   height: 21px;
-  font-family: 'Fira Sans', sans-serif;
+  font-family: "Fira Sans", sans-serif;
   line-height: 28px;
   font-size: 18px;
   color: #222222;
@@ -57,9 +47,12 @@
   margin-left: 30px;
 }
 
-.services-logo, .our-works-logo, .testimonials-logo, .clients-logo {
+
+.our-works-logo,
+.testimonials-logo,
+.clients-logo {
   width: 160px;
-  font-family: 'Fira Sans', sans-serif;
+  font-family: "Fira Sans", sans-serif;
   font-weight: 900;
   line-height: 24px;
   font-size: 14px;
@@ -68,33 +61,6 @@
   color: #222222;
   opacity: 0.7;
   margin-top: 142px;
-}
-
-.services-text-menu {
-  display: flex;
-}
-
-.services-menu {
-  display: flex;
-  margin-left: 0;
-  margin-top: 40px;
-  width: 409px;
-}
-
-.services-menu-items {
-  margin-top: -21px;
-  margin-left: 60px;
-}
-
-.menu-item {
-  list-style-type: none;
-  width: 189px;
-  font-family: 'Fira Sans', sans-serif;
-  line-height: 28px;
-  font-size: 18px;
-  color: #222222;
-  opacity: 0.5;
-  margin-top: 21px;
 }
 
 .services-slider-nav {
@@ -111,7 +77,8 @@
   margin: 1rem 0;
 }
 
-.services-navigation, .testimonials-navigation {
+.services-navigation,
+.testimonials-navigation {
   width: 125px;
   height: 50px;
   display: flex;
@@ -120,10 +87,13 @@
   cursor: pointer;
 }
 
-.services-navigation-left, .services-navigation-right, .testimonials-navigation-left, .testimonials-navigation-right {
+.services-navigation-left,
+.services-navigation-right,
+.testimonials-navigation-left,
+.testimonials-navigation-right {
   width: 50px;
   height: 50px;
-  background: #C4C4C4;
+  background: #c4c4c4;
   display: flex;
   justify-content: center;
   align-items: center;
@@ -143,9 +113,11 @@
   margin-top: 30px;
 }
 
-.features-title, .our-works-title, .clients-title {
+.features-title,
+.our-works-title,
+.clients-title {
   width: 473px;
-  font-family: 'Fira Sans', sans-serif;
+  font-family: "Fira Sans", sans-serif;
   font-weight: 600;
   line-height: 50px;
   font-size: 40px;
@@ -155,7 +127,7 @@
 
 .features-text {
   width: 475px;
-  font-family: 'Fira Sans', sans-serif;
+  font-family: "Fira Sans", sans-serif;
   line-height: 28px;
   font-size: 18px;
   color: #222222;
@@ -163,7 +135,8 @@
   margin-top: 30px;
 }
 
-.ultimate-result, .minimal-design {
+.ultimate-result,
+.minimal-design {
   width: 270px;
   display: flex;
   align-items: center;
@@ -171,9 +144,10 @@
   justify-content: space-between;
 }
 
-.ultimate-result-text, .minimal-design-text {
+.ultimate-result-text,
+.minimal-design-text {
   width: 190px;
-  font-family: 'Fira Sans', sans-serif;
+  font-family: "Fira Sans", sans-serif;
   font-weight: bold;
   line-height: 24px;
   font-size: 14px;
@@ -199,7 +173,7 @@
 }
 
 .our-works-switcher {
-  font-family: 'Fira Sans', sans-serif;
+  font-family: "Fira Sans", sans-serif;
   font-weight: 500;
   line-height: 24px;
   font-size: 14px;
@@ -210,7 +184,8 @@
   margin-left: 24px;
 }
 
-.our-works-placeholders-1, .our-works-placeholders-2 {
+.our-works-placeholders-1,
+.our-works-placeholders-2 {
   display: flex;
   justify-content: space-between;
   margin-top: 30px;
@@ -235,9 +210,10 @@
   margin-top: 52px;
 }
 
-.our-works-text, .clients-text {
+.our-works-text,
+.clients-text {
   width: 730px;
-  font-family: 'Fira Sans', sans-serif;
+  font-family: "Fira Sans", sans-serif;
   line-height: 28px;
   font-size: 18px;
   color: #222222;
@@ -261,7 +237,7 @@
 
 .testimonials-text {
   width: 540px;
-  font-family: 'Fira Sans', sans-serif;
+  font-family: "Fira Sans", sans-serif;
   font-weight: 600;
   line-height: 50px;
   font-size: 40px;
@@ -269,7 +245,8 @@
   color: #222222;
 }
 
-.testimonials-name, .testimonials-position {
+.testimonials-name,
+.testimonials-position {
   margin-left: 0;
   margin-bottom: 13px;
 }
@@ -329,7 +306,7 @@ footer {
 }
 
 .footer-logo {
-  color: #FFFFFF;
+  color: #ffffff;
 }
 
 .footer-menu {
@@ -339,10 +316,10 @@ footer {
 }
 
 .footer-menu-href {
-  font-family: 'Fira Sans', sans-serif;
+  font-family: "Fira Sans", sans-serif;
   line-height: 28px;
   font-size: 18px;
-  color: #FFFFFF;
+  color: #ffffff;
   cursor: pointer;
   text-decoration: none;
 }
@@ -355,30 +332,30 @@ footer {
   width: 140px;
   height: 40px;
   border: 0;
-  font-family: 'Fira Sans', sans-serif;
+  font-family: "Fira Sans", sans-serif;
   line-height: 28px;
   font-size: 18px;
-  background: #F5F4FF;
+  background: #f5f4ff;
   text-indent: 15px;
 }
 
 .footer-button {
   width: 80px;
   height: 42px;
-  background: #C6B393;
+  background: #c6b393;
   border: 0;
-  font-family: 'Fira Sans', sans-serif;
+  font-family: "Fira Sans", sans-serif;
   font-weight: 500;
   line-height: 24px;
   font-size: 14px;
   letter-spacing: 4px;
-  color: #FFFFFF;
+  color: #ffffff;
   margin-left: 18px;
 }
 
 .footer-divider {
   opacity: 0.2;
-  border: 1px solid #FFFFFF;
+  border: 1px solid #ffffff;
   box-sizing: border-box;
   margin-top: 40px;
 }
@@ -396,10 +373,10 @@ footer {
 }
 
 .footer-submenu-href {
-  font-family: 'Fira Sans', sans-serif;
+  font-family: "Fira Sans", sans-serif;
   line-height: 28px;
   font-size: 18px;
-  color: #FFFFFF;
+  color: #ffffff;
   opacity: 0.4;
   text-decoration: none;
 }
@@ -412,17 +389,15 @@ footer {
 }
 
 /* Desktop Styles */
-@media only screen and (min-width: 961px) and (max-width: 1200px){
- 
-  .services-menu-items {
-    margin-left: 0;
-  }
-
-  .features-text-title, .ultimate-result, .minimal-design {
+@media only screen and (min-width: 961px) and (max-width: 1200px) {
+  .features-text-title,
+  .ultimate-result,
+  .minimal-design {
     margin-left: 50px;
   }
 
-  .features-title, .features-text {
+  .features-title,
+  .features-text {
     width: 80%;
     text-align: center;
   }
@@ -430,36 +405,17 @@ footer {
 
 /* Tablet Styles */
 @media only screen and (max-width: 960px) {
-  .services-text {
-    width: 100%;
-    text-align: center;
-  }
-
-  .services-text-menu, .container-features, .our-works-text-button {
+ .container-features, .our-works-text-button {
     margin-left: 5%;
     margin-right: 5%;
   }
 
-  .services-text-menu {
-    display: block;
-  }
-
-  .services-menu-items, .features-text-title {
+ .features-text-title {
     margin: 0;
   }
-
-  .menu-item {
-    font-size: 14px;
-    width: 100%;
-  }
-
-  .services-menu {
-    margin: 10px auto;
-    width: 100%;
-    justify-content: center;
-  }
-
-  .services-logo, .container-features, .our-works-logo {
+  
+  .container-features,
+  .our-works-logo {
     margin-top: 60px;
   }
 
@@ -467,25 +423,32 @@ footer {
     display: none;
   }
 
-  .features-title, .features-text {
+  .features-title,
+  .features-text {
     width: 100%;
     text-align: center;
   }
 
-  .ultimate-result, .minimal-design {
+  .ultimate-result,
+  .minimal-design {
     margin: 20px auto 0 auto;
   }
 
- .our-works-text-button {
+  .our-works-text-button {
     display: block;
     margin-top: 0;
   }
-  
-  .our-works-switchers, .our-works-placeholder:hover, .our-works-placeholders-2, .our-works-placeholders-1 {
+
+  .our-works-switchers,
+  .our-works-placeholder:hover,
+  .our-works-placeholders-2,
+  .our-works-placeholders-1 {
     display: none;
   }
 
-  .our-works-title, .our-works-text, .clients-text {
+  .our-works-title,
+  .our-works-text,
+  .clients-text {
     text-align: center;
     width: 100%;
   }
@@ -505,7 +468,9 @@ footer {
     margin-top: 60px;
   }
 
-  .clients-title, .footer-logo, .footer-forms {
+  .clients-title,
+  .footer-logo,
+  .footer-forms {
     display: none;
   }
 
@@ -551,6 +516,4 @@ footer {
   .clients-brands {
     margin-top: 20px;
   }
-
 }
-

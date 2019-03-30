@@ -1,0 +1,17 @@
+.services-text {
+  width: 540px;
+  font-family: "Fira Sans", sans-serif;
+  font-weight: 600;
+  line-height: 50px;
+  font-size: 40px;
+  letter-spacing: -1px;
+  color: #222222;
+  margin-top: 40px;
+}
+
+@media only screen and (max-width: 960px) {
+  .services-text {
+    width: 100%;
+    text-align: center;
+  }
+}
