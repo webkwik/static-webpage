@@ -5,7 +5,7 @@ import right from "./Vector_right.svg";
 class NavRight extends Component {
   render() {
     return (
-      <div className="services-navigation-right">
+      <div className="services-navigation-right" onClick={this.props.onClicked}>
         <img src={right} className="arrow-left" alt="arrow-left" />
       </div>
     );

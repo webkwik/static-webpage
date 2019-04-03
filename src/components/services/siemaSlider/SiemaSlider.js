@@ -3,6 +3,7 @@ import "./SiemaSlider.css";
 import Siema from "siema";
 import placeholderVideo from "./placeholder-services-video.png";
 import NavLeft from "./navLeft/NavLeft";
+import NavRight from "./navRight/NavRight";
 
 class SiemaSlider extends Component {
   prev = () => {
@@ -14,6 +15,7 @@ class SiemaSlider extends Component {
     console.log("next");
     this.siema.next();
   };
+
   render() {
     return (
       <div className="services-slider-nav">
@@ -34,14 +36,8 @@ class SiemaSlider extends Component {
           </div>
         </div>
         <div className="services-navigation">
-          <NavLeft onClick={this.prev} />
-          <div className="services-navigation-right" onClick={this.next}>
-            <img
-              src="images/Vector_right.svg"
-              className="arrow-left"
-              alt="arrow-left"
-            />
-          </div>
+          <NavLeft onClicked={this.prev} />
+          <NavRight onClicked={this.next} />
         </div>
       </div>
     );
