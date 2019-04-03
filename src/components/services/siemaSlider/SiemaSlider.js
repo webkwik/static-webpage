@@ -1,13 +1,17 @@
 import React, { Component } from "react";
 import "./SiemaSlider.css";
 import Siema from "siema";
+import placeholderVideo from "./placeholder-services-video.png";
+import NavLeft from "./navLeft/NavLeft";
 
 class SiemaSlider extends Component {
   prev = () => {
+    console.log("prev");
     this.siema.prev();
   };
 
   next = () => {
+    console.log("next");
     this.siema.next();
   };
   render() {
@@ -16,27 +20,21 @@ class SiemaSlider extends Component {
         <div className="siema">
           <div>
             <img
-              src="images/placeholder-services-video.png"
+              src={placeholderVideo}
               className="services-placeholder"
               alt="services-placeholder"
             />
           </div>
           <div>
             <img
-              src="images/placeholder-services-video.png"
+              src={placeholderVideo}
               className="services-placeholder"
               alt="services-placeholder"
             />
           </div>
         </div>
         <div className="services-navigation">
-          <div className="services-navigation-left" onClick={this.prev}>
-            <img
-              src="images/Vector_left.svg"
-              className="arrow-left"
-              alt="arrow-left"
-            />
-          </div>
+          <NavLeft onClick={this.prev} />
           <div className="services-navigation-right" onClick={this.next}>
             <img
               src="images/Vector_right.svg"
