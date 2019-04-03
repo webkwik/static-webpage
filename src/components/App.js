@@ -2,45 +2,19 @@ import React from "react";
 import "./App.css";
 import Header from "./header/Header";
 import Services from "./services/Services";
-import SiemaSlider from "./services/siemaSlider/SiemaSlider";
-import ContainerSlider from './containerSlider/ContainerSlider';
-import ContainerAbout from './containerAbout/ContainerAbout';
+import ContainerSlider from "./containerSlider/ContainerSlider";
+import ContainerAbout from "./containerAbout/ContainerAbout";
+import Features from "./containerFeatures/Features";
 
 function App() {
-    return (
-      <React.Fragment>      
-        <div className="container">
-          <Header />
-          <ContainerSlider />
-          <ContainerAbout />
+  return (
+    <React.Fragment>
+      <div className="container">
+        <Header />
+        <ContainerSlider />
+        <ContainerAbout />
         <Services />
-        <SiemaSlider />
-        <div className="container-features">
-          <img
-            src="images/placeholder-features.png"
-            className="features-placeholder"
-            alt="features-placeholder"
-          />
-          <div className="features-text-title">
-            <div className="features-title">
-              Well thought with super easy to use
-            </div>
-            <div className="features-text">
-              As we approached the palace I could see through the great windows
-              of the first floor the brilliantly illuminated audience chamber of
-              Than Kosis. The immense hall was crowded with nobles and their
-              women.
-            </div>
-            <div className="ultimate-result">
-              <img src="images/100 icon.svg" alt="100-icon" />
-              <div className="ultimate-result-text">Ultimate Result</div>
-            </div>
-            <div className="minimal-design">
-              <img src="images/Bag icon.svg" alt="bag-icon" />
-              <div className="minimal-design-text">Minimal Design</div>
-            </div>
-          </div>
-        </div>
+        <Features />
         <div className="container-our-works">
           <div className="our-works-logo">— our works</div>
           <div className="our-works-title-switchers">
@@ -230,4 +204,4 @@ function App() {
   );
 }
 
-export default App
+export default App;
