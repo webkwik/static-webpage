@@ -28,7 +28,7 @@
 }
 
 .testimonials-name {
-  font-family: 'Fira Sans', sans-serif;
+  font-family: "Fira Sans", sans-serif;
   font-style: normal;
   font-weight: 500;
   line-height: 32px;
@@ -47,7 +47,6 @@
   margin-left: 30px;
 }
 
-
 .our-works-logo,
 .testimonials-logo,
 .clients-logo {
@@ -63,21 +62,6 @@
   margin-top: 142px;
 }
 
-.services-slider-nav {
-  width: 100%;
-  max-width: 825px;
-  margin: 80px auto;
-}
-
-.services-placeholder {
-  width: 100%;
-}
-
-.siema {
-  margin: 1rem 0;
-}
-
-.services-navigation,
 .testimonials-navigation {
   width: 125px;
   height: 50px;
@@ -87,8 +71,6 @@
   cursor: pointer;
 }
 
-.services-navigation-left,
-.services-navigation-right,
 .testimonials-navigation-left,
 .testimonials-navigation-right {
   width: 50px;
@@ -99,21 +81,6 @@
   align-items: center;
 }
 
-.container-features {
-  margin-top: 180px;
-  display: flex;
-}
-
-.features-placeholder {
-  margin-left: -125px;
-}
-
-.features-text-title {
-  margin-left: 192px;
-  margin-top: 30px;
-}
-
-.features-title,
 .our-works-title,
 .clients-title {
   width: 473px;
@@ -123,41 +90,6 @@
   font-size: 40px;
   letter-spacing: -1px;
   color: #222222;
-}
-
-.features-text {
-  width: 475px;
-  font-family: "Fira Sans", sans-serif;
-  line-height: 28px;
-  font-size: 18px;
-  color: #222222;
-  opacity: 0.7;
-  margin-top: 30px;
-}
-
-.ultimate-result,
-.minimal-design {
-  width: 270px;
-  display: flex;
-  align-items: center;
-  margin-top: 62px;
-  justify-content: space-between;
-}
-
-.ultimate-result-text,
-.minimal-design-text {
-  width: 190px;
-  font-family: "Fira Sans", sans-serif;
-  font-weight: bold;
-  line-height: 24px;
-  font-size: 14px;
-  letter-spacing: 4px;
-  text-transform: uppercase;
-  color: #000000;
-}
-
-.minimal-design {
-  margin-top: 30px;
 }
 
 .our-works-title-switchers {
@@ -390,48 +322,17 @@ footer {
 
 /* Desktop Styles */
 @media only screen and (min-width: 961px) and (max-width: 1200px) {
-  .features-text-title,
-  .ultimate-result,
-  .minimal-design {
-    margin-left: 50px;
-  }
-
-  .features-title,
-  .features-text {
-    width: 80%;
-    text-align: center;
-  }
 }
 
 /* Tablet Styles */
 @media only screen and (max-width: 960px) {
- .container-features, .our-works-text-button {
+  .our-works-text-button {
     margin-left: 5%;
     margin-right: 5%;
   }
 
- .features-text-title {
-    margin: 0;
-  }
-  
-  .container-features,
   .our-works-logo {
     margin-top: 60px;
-  }
-
-  .features-placeholder {
-    display: none;
-  }
-
-  .features-title,
-  .features-text {
-    width: 100%;
-    text-align: center;
-  }
-
-  .ultimate-result,
-  .minimal-design {
-    margin: 20px auto 0 auto;
   }
 
   .our-works-text-button {

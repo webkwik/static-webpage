@@ -1,0 +1,30 @@
+.result-design {
+  width: 270px;
+  display: flex;
+  align-items: center;
+  margin-top: 30px;
+  justify-content: space-between;
+}
+
+.result-design-text {
+  width: 190px;
+  font-family: "Fira Sans", sans-serif;
+  font-weight: bold;
+  line-height: 24px;
+  font-size: 14px;
+  letter-spacing: 4px;
+  text-transform: uppercase;
+  color: #000000;
+}
+
+@media only screen and (min-width: 961px) and (max-width: 1200px) {
+  .result-design {
+    margin-left: 50px;
+  }
+}
+
+@media only screen and (max-width: 960px) {
+  .result-design {
+    margin: 20px auto 0 auto;
+  }
+}
