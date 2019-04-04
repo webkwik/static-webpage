@@ -6,8 +6,6 @@ import designIcon from "./bag-icon.svg";
 
 class FeaturesTextTitle extends Component {
   render() {
-    const resultText = "Ultimate Result";
-    const designText = "Minimal Design";
     return (
       <div className="features-text-title">
         <div className="features-title">
@@ -18,8 +16,8 @@ class FeaturesTextTitle extends Component {
           the first floor the brilliantly illuminated audience chamber of Than
           Kosis. The immense hall was crowded with nobles and their women.
         </div>
-        <ResultDesign text={resultText} icon={resultIcon} />
-        <ResultDesign text={designText} icon={designIcon} />
+        <ResultDesign text={"Ultimate Result"} icon={resultIcon} />
+        <ResultDesign text={"Minimal Design"} icon={designIcon} />
       </div>
     );
   }
