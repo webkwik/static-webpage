@@ -5,6 +5,7 @@ import Services from "./services/Services";
 import ContainerSlider from "./containerSlider/ContainerSlider";
 import ContainerAbout from "./containerAbout/ContainerAbout";
 import Features from "./containerFeatures/Features";
+import OurWorks from "./containerOurWorks/OurWorks";
 
 function App() {
   return (
@@ -15,63 +16,7 @@ function App() {
         <ContainerAbout />
         <Services />
         <Features />
-        <div className="container-our-works">
-          <div className="our-works-logo">— our works</div>
-          <div className="our-works-title-switchers">
-            <div className="our-works-title">Discover our Work</div>
-            <div className="our-works-switchers">
-              <div className="our-works-switcher">All</div>
-              <div className="our-works-switcher">Branding</div>
-              <div className="our-works-switcher">Web</div>
-              <div className="our-works-switcher">Development</div>
-              <div className="our-works-switcher">Films</div>
-            </div>
-          </div>
-          <div className="our-works-placeholders-1">
-            <img
-              src="images/placeholder-our-works.png"
-              className="our-works-placeholder"
-              alt="our-works-placeholder"
-            />
-            <img
-              src="images/placeholder-our-works.png"
-              className="our-works-placeholder"
-              alt="our-works-placeholder"
-            />
-            <img
-              src="images/placeholder-our-works.png"
-              className="our-works-placeholder"
-              alt="our-works-placeholder"
-            />
-          </div>
-          <div className="our-works-placeholders-2">
-            <img
-              src="images/placeholder-our-works.png"
-              className="our-works-placeholder"
-              alt="our-works-placeholder"
-            />
-            <img
-              src="images/placeholder-our-works.png"
-              className="our-works-placeholder"
-              alt="our-works-placeholder"
-            />
-            <img
-              src="images/placeholder-our-works.png"
-              className="our-works-placeholder"
-              alt="our-works-placeholder"
-            />
-          </div>
-          <div className="our-works-text-button">
-            <div className="our-works-text">
-              It picks up the words on the page and displays ads that are
-              similar to those words. Then when someone either performs an
-              action or clicks on your page you will get paid.
-            </div>
-            <div className="our-works-button">
-              <div className="text-button">our works</div>
-            </div>
-          </div>
-        </div>
+        <OurWorks />
         <div className="container-testimonials">
           <div className="testimonials-logo-text-nav">
             <div className="testimonials-logo">— Testimonials</div>

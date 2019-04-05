@@ -1,14 +1,14 @@
-import React, {Component} from 'react';
-import './BlueButton.css';
+import React, { Component } from "react";
+import "./BlueButton.css";
 
-class BlueButton extends Component {    
-    render() {
-        return (
-        <div className="blue-button">
-            <div className="text-button">get started</div>
-        </div>
-        )
-    }
+class BlueButton extends Component {
+  render() {
+    return (
+      <div className="blue-button">
+        <div className="text-button">{this.props.text}</div>
+      </div>
+    );
+  }
 }
 
-export default BlueButton
+export default BlueButton;

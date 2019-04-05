@@ -1,0 +1,11 @@
+.our-works-switcher {
+  font-family: "Fira Sans", sans-serif;
+  font-weight: 500;
+  line-height: 24px;
+  font-size: 14px;
+  letter-spacing: 4px;
+  text-transform: uppercase;
+  color: #222222;
+  opacity: 0.3;
+  margin-left: 24px;
+}
