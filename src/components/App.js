@@ -7,6 +7,7 @@ import ContainerAbout from "./containerAbout/ContainerAbout";
 import Features from "./containerFeatures/Features";
 import OurWorks from "./containerOurWorks/OurWorks";
 import ContainerTestimonials from "./conatainerTestimonials/ContainerTestimonials";
+import ContainerClients from "./containerClients/ContainerClients";
 
 function App() {
   return (
@@ -19,45 +20,7 @@ function App() {
         <Features />
         <OurWorks />
         <ContainerTestimonials />
-        <div className="container-clients">
-          <div className="clients-title-text">
-            <div className="clients-title">Our Clients</div>
-            <div className="clients-logo-text">
-              <div className="clients-logo">— We worked with</div>
-              <div className="clients-text">
-                Our favorite brands are our friends! We help them to achieve
-                their goals, they help us to stay sharp.
-              </div>
-            </div>
-          </div>
-          <div className="clients-brands">
-            <img
-              src="images/xiaomi.svg"
-              className="clients-brand"
-              alt="clients-brand"
-            />
-            <img
-              src="images/tinder.svg"
-              className="clients-brand"
-              alt="clients-brand"
-            />
-            <img
-              src="images/apple.svg"
-              className="clients-brand"
-              alt="clients-brand"
-            />
-            <img
-              src="images/nike.svg"
-              className="clients-brand"
-              alt="clients-brand"
-            />
-            <img
-              src="images/amd.svg"
-              className="clients-brand"
-              alt="clients-brand"
-            />
-          </div>
-        </div>
+        <ContainerClients />
       </div>
       <footer>
         <div className="container-footer">
