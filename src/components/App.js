@@ -6,6 +6,7 @@ import ContainerSlider from "./containerSlider/ContainerSlider";
 import ContainerAbout from "./containerAbout/ContainerAbout";
 import Features from "./containerFeatures/Features";
 import OurWorks from "./containerOurWorks/OurWorks";
+import ContainerTestimonials from "./conatainerTestimonials/ContainerTestimonials";
 
 function App() {
   return (
@@ -17,40 +18,7 @@ function App() {
         <Services />
         <Features />
         <OurWorks />
-        <div className="container-testimonials">
-          <div className="testimonials-logo-text-nav">
-            <div className="testimonials-logo">— Testimonials</div>
-            <div className="testimonials-text">
-              "Professionals in their craft! All products were super great with
-              strong attention to details, and overall vibe"
-            </div>
-            <div className="testimonials-name-position">
-              <div className="testimonials-name">Polina Kuzina</div>
-              <div className="testimonials-position">Manager at Craftwork</div>
-            </div>
-            <div className="testimonials-navigation">
-              <div className="testimonials-navigation-left">
-                <img
-                  src="images/Vector_left.svg"
-                  className="arrow-left"
-                  alt="arrow-left"
-                />
-              </div>
-              <div className="testimonials-navigation-right">
-                <img
-                  src="images/Vector_right.svg"
-                  className="arrow-left"
-                  alt="arrow-left"
-                />
-              </div>
-            </div>
-          </div>
-          <img
-            src="images/placeholder-testimonial.png"
-            className="testimonial-placeholder"
-            alt="testimonial-placeholder"
-          />
-        </div>
+        <ContainerTestimonials />
         <div className="container-clients">
           <div className="clients-title-text">
             <div className="clients-title">Our Clients</div>
