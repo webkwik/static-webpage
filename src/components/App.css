@@ -1,0 +1,21 @@
+.container {
+  margin: auto;
+  width: 100%;
+  max-width: 960px;
+}
+
+.container-header-mobile {
+  display: none;
+}
+
+footer {
+  background: #515151;
+  margin-top: 135px;
+}
+
+/* Tablet Styles */
+@media only screen and (max-width: 960px) {
+  footer {
+    margin: 0;
+  }
+}

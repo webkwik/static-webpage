@@ -1,0 +1,27 @@
+.container-footer {
+  margin: auto;
+  width: 100%;
+  max-width: 960px;
+  height: 240px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+
+.footer-divider {
+  opacity: 0.2;
+  border: 1px solid #ffffff;
+  box-sizing: border-box;
+  margin-top: 40px;
+}
+
+@media only screen and (max-width: 960px) {
+  .container-footer {
+    height: 150px;
+    margin-top: 50px;
+  }
+
+  .footer-divider {
+    margin-top: 20px;
+  }
+}

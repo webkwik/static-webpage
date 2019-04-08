@@ -1,0 +1,30 @@
+.footer-logo-menu-form {
+  height: 42px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.footer-logo {
+  font-family: "Montserrat", sans-serif;
+  font-weight: bold;
+  font-size: 24px;
+  cursor: default;
+  color: #ffffff;
+}
+
+.footer-menu {
+  display: flex;
+  justify-content: space-between;
+  width: 336px;
+}
+
+@media only screen and (max-width: 960px) {
+  .footer-logo-menu-form {
+    justify-content: center;
+  }
+
+  .footer-logo {
+    display: none;
+  }
+}

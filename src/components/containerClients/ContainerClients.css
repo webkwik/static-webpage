@@ -1,0 +1,9 @@
+.container-clients {
+  margin-top: 280px;
+}
+
+@media only screen and (max-width: 960px) {
+  .container-clients {
+    margin-top: 60px;
+  }
+}

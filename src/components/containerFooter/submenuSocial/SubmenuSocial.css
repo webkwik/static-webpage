@@ -1,0 +1,34 @@
+.footer-submenu-social {
+  display: flex;
+  justify-content: space-between;
+  margin-top: 37px;
+}
+
+.footer-submenu {
+  width: 400px;
+  display: flex;
+  justify-content: space-between;
+}
+
+.footer-social {
+  display: flex;
+  justify-content: space-between;
+  width: 120px;
+  opacity: 0.4;
+}
+
+@media only screen and (max-width: 960px) {
+  .footer-submenu-social {
+    flex-direction: column;
+    margin: 0;
+  }
+
+  .footer-submenu {
+    margin: 20px auto 0 auto;
+    width: 300px;
+  }
+
+  .footer-social {
+    margin: 20px auto 0 auto;
+  }
+}

@@ -1,32 +1,34 @@
 .slider-title {
-    width: 474px;
-    font-family: 'Fira Sans', sans-serif;
-    font-weight: bold;
-    line-height: 70px;
-    font-size: 60px;
-    letter-spacing: -1px;
-    color: #151515;
-    padding-top: 50px;
-  }
-  
-  .slider-text {
-    width: 474px;
-    font-family: 'Fira Sans', sans-serif;
-    line-height: 28px;
-    font-size: 18px;
-    color: #222222;
-    opacity: 0.7;
-    padding-top: 30px;
-  }
+  width: 474px;
+  font-family: "Fira Sans", sans-serif;
+  font-weight: bold;
+  line-height: 70px;
+  font-size: 60px;
+  letter-spacing: -1px;
+  color: #151515;
+  padding-top: 50px;
+}
+
+.slider-text {
+  width: 474px;
+  font-family: "Fira Sans", sans-serif;
+  line-height: 28px;
+  font-size: 18px;
+  color: #222222;
+  opacity: 0.7;
+  padding-top: 30px;
+  margin-bottom: 56px;
+}
 
 @media only screen and (max-width: 960px) {
-    .slider-title, .slider-text {
-        width: 100%;
-        text-align: center;
-      }
-    
-    .slider-title-text {
-        margin-left: 5%;
-        margin-right: 5%;
-      }
+  .slider-title,
+  .slider-text {
+    width: 100%;
+    text-align: center;
+  }
+
+  .slider-title-text {
+    margin-left: 5%;
+    margin-right: 5%;
+  }
 }

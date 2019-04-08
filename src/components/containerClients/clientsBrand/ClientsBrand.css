@@ -1,0 +1,11 @@
+.clients-brands {
+  display: flex;
+  justify-content: space-between;
+  margin-top: 75px;
+}
+
+@media only screen and (max-width: 960px) {
+  .clients-brands {
+    margin-top: 20px;
+  }
+}

@@ -1,0 +1,36 @@
+.our-works-title-switchers {
+  display: flex;
+  justify-content: space-between;
+  margin-top: 40px;
+  margin-bottom: 50px;
+}
+
+.our-works-title {
+  width: 473px;
+  font-family: "Fira Sans", sans-serif;
+  font-weight: 600;
+  line-height: 50px;
+  font-size: 40px;
+  letter-spacing: -1px;
+  color: #222222;
+}
+
+.our-works-switchers {
+  display: flex;
+  align-items: center;
+}
+
+@media only screen and (max-width: 960px) {
+  .our-works-title-switchers {
+    margin-bottom: 30px;
+  }
+
+  .our-works-title {
+    text-align: center;
+    width: 100%;
+  }
+
+  .our-works-switchers {
+    display: none;
+  }
+}
