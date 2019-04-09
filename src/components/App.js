@@ -1,32 +1,25 @@
 import React from "react";
 import "./App.css";
 import Header from "./header/Header";
-import Services from "./services/Services";
-import ContainerSlider from "./containerSlider/ContainerSlider";
-import ContainerAbout from "./containerAbout/ContainerAbout";
-import Features from "./containerFeatures/Features";
-import OurWorks from "./containerOurWorks/OurWorks";
-import ContainerTestimonials from "./conatainerTestimonials/ContainerTestimonials";
-import ContainerClients from "./containerClients/ContainerClients";
 import ContainerFooter from "./containerFooter/ContainerFooter";
+import { BrowserRouter as Router, Route, Link } from "react-router-dom";
+import Home from "../pages/Home";
+import About from "../pages/about/About";
+import Contact from "../pages/contact/Contact";
 
 function App() {
   return (
-    <React.Fragment>
+    <Router>
       <div className="container">
         <Header />
-        <ContainerSlider />
-        <ContainerAbout />
-        <Services />
-        <Features />
-        <OurWorks />
-        <ContainerTestimonials />
-        <ContainerClients />
+        <Route exact path="/" component={Home} />
+        <Route path="/about" component={About} />
+        <Route path="/contact" component={Contact} />
       </div>
       <footer>
         <ContainerFooter />
       </footer>
-    </React.Fragment>
+    </Router>
   );
 }
 
