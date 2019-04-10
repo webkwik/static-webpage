@@ -1,8 +1,9 @@
 import React from "react";
 import { BrowserRouter as Router, Route, Link } from "react-router-dom";
+import ContainerClients from "../../components/containerClients/ContainerClients";
 
 function About() {
-  return <h1>ABOUT</h1>;
+  return <ContainerClients />;
 }
 
 export default About;
