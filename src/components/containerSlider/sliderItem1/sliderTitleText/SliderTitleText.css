@@ -1,14 +1,3 @@
-.slider-title {
-  width: 474px;
-  font-family: "Fira Sans", sans-serif;
-  font-weight: bold;
-  line-height: 70px;
-  font-size: 60px;
-  letter-spacing: -1px;
-  color: #151515;
-  padding-top: 50px;
-}
-
 .slider-text {
   width: 474px;
   font-family: "Fira Sans", sans-serif;
@@ -21,7 +10,6 @@
 }
 
 @media only screen and (max-width: 960px) {
-  .slider-title,
   .slider-text {
     width: 100%;
     text-align: center;
