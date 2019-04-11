@@ -38,13 +38,13 @@ class Menu extends Component {
             X
           </div>
           <div className="container-menu">
-            <Link to="/" className="menu-href">
+            <Link to="/" className="menu-href" onClick={this.toggleMenu}>
               HOME
             </Link>
-            <Link to="/about" className="menu-href">
+            <Link to="/about" className="menu-href" onClick={this.toggleMenu}>
               ABOUT
             </Link>
-            <Link to="/contact" className="menu-href">
+            <Link to="/contact" className="menu-href" onClick={this.toggleMenu}>
               CONTACT
             </Link>
           </div>
