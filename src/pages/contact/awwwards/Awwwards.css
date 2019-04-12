@@ -1,0 +1,70 @@
+.title-desc-year {
+  display: flex;
+  justify-content: space-between;
+  margin-bottom: 55px;
+}
+
+.awwwards-title {
+  width: 190px;
+  height: 32px;
+  font-family: Fira Sans;
+  font-weight: 500;
+  font-size: 22px;
+  line-height: 32px;
+  color: #000000;
+}
+
+.awwwards-desc {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+}
+
+.awwwards-desc-title {
+  width: 255px;
+  height: 27px;
+  font-family: Fira Sans;
+  font-weight: 500;
+  font-size: 14px;
+  line-height: 24px;
+  letter-spacing: 4px;
+  text-transform: uppercase;
+  color: #000000;
+  margin-top: 5px;
+}
+
+.awwwards-desc-text {
+  width: 230px;
+  height: 84px;
+  font-family: Fira Sans;
+  font-size: 18px;
+  line-height: 28px;
+  color: #222222;
+  opacity: 0.7;
+  margin-top: 13px;
+}
+
+.awwwwards-year {
+  width: 65px;
+  height: 28px;
+  font-family: Fira Sans;
+  font-size: 18px;
+  line-height: 28px;
+  text-align: right;
+  color: #000000;
+}
+
+@media only screen and (max-width: 960px) {
+  .title-desc-year {
+    display: block;
+    margin-bottom: 40px;
+  }
+
+  .awwwards-title,
+  .awwwards-desc-title,
+  .awwwards-desc-text,
+  .awwwwards-year {
+    text-align: center;
+    width: 100%;
+  }
+}
