@@ -1,0 +1,33 @@
+.divider {
+  width: 100%;
+  height: 1px;
+  background: #222222;
+  opacity: 0.2;
+  margin: 90px 0 90px 0;
+}
+
+.logo-text {
+  display: flex;
+  justify-content: space-between;
+}
+.awwwards-logo {
+  width: 90px;
+  height: 10px;
+  margin-top: 5px;
+}
+.awwwards-items {
+  display: flex;
+  flex-direction: column;
+}
+@media only screen and (max-width: 960px) {
+  .divider {
+    margin: 50px 0 50px 0;
+  }
+  .logo-text {
+    display: block;
+  }
+
+  .awwwards-logo {
+    margin-bottom: 20px;
+  }
+}

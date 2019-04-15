@@ -20,6 +20,11 @@
   align-self: center;
 }
 
+.change-color {
+  background: #ef8e70;
+  width: 160px;
+}
+
 @media only screen and (max-width: 960px) {
   .blue-button {
     margin: 40px auto 0 auto;
