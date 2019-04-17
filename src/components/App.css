@@ -8,6 +8,10 @@
   display: none;
 }
 
+body {
+  margin: 0;
+}
+
 footer {
   background: #515151;
   margin-top: 135px;
