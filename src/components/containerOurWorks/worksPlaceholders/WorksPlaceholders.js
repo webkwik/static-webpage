@@ -4,13 +4,9 @@ import WorksPlaceholder from "./worksPlaceholder/WorksPlaceholder";
 
 class WorksPlaceholders extends Component {
   render() {
-    return (
-      <div className="our-works-placeholders">
-        <WorksPlaceholder />
-        <WorksPlaceholder />
-        <WorksPlaceholder />
-      </div>
-    );
+    const listID = [1, 2, 3];
+    const listItems = listID.map(item => <WorksPlaceholder id={item} />);
+    return <div className="our-works-placeholders">{listItems}</div>;
   }
 }
 
