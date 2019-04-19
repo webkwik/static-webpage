@@ -3,10 +3,33 @@ import "./WorksPlaceholders.css";
 import WorksPlaceholder from "./worksPlaceholder/WorksPlaceholder";
 
 class WorksPlaceholders extends Component {
+  state = {
+    list: undefined
+  };
+  getImg = async () => {
+    const url = await fetch(
+      "http://5cb6f62aa3763800149fd07a.mockapi.io/api/works"
+    );
+    const data = await url.json();
+    this.setState({
+      list: data
+    });
+  };
+
+  componentDidMount() {
+    this.getImg();
+  }
   render() {
-    const listID = [1, 2, 3];
-    const listItems = listID.map(item => <WorksPlaceholder id={item} />);
-    return <div className="our-works-placeholders">{listItems}</div>;
+    let listComponents;
+    const listResp = this.state.list;
+    try {
+      listComponents = listResp.map(item => (
+        <WorksPlaceholder id={item.id} img={item.avatar} />
+      ));
+    } catch (error) {
+      console.log(error);
+    }
+    return <div className="our-works-placeholders">{listComponents}</div>;
   }
 }
 
