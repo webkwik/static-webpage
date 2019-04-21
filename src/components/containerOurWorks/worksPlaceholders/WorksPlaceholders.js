@@ -24,7 +24,7 @@ class WorksPlaceholders extends Component {
     const listResp = this.state.list;
     try {
       listComponents = listResp.map(item => (
-        <WorksPlaceholder id={item.id} img={item.avatar} />
+        <WorksPlaceholder id={item.id} img={item.avatar} name={item.name} />
       ));
     } catch (error) {
       console.log(error);

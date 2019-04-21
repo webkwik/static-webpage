@@ -6,6 +6,7 @@ import { BrowserRouter as Router, Route, Link } from "react-router-dom";
 import Home from "../pages/Home";
 import About from "../pages/about/About";
 import Contact from "../pages/contact/Contact";
+import Id from "../pages/id/Id";
 
 function App() {
   return (
@@ -15,6 +16,7 @@ function App() {
         <Route exact path="/" component={Home} />
         <Route path="/about" component={About} />
         <Route path="/contact" component={Contact} />
+        <Route path="/:id" component={Id} />
       </div>
       <footer>
         <ContainerFooter />
