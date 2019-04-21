@@ -6,14 +6,12 @@ class WorksPlaceholders extends Component {
   state = {
     list: undefined
   };
-  getImg = async () => {
-    const url = await fetch(
-      "http://5cb6f62aa3763800149fd07a.mockapi.io/api/works"
-    );
-    const data = await url.json();
-    this.setState({
-      list: data
-    });
+
+  getImg = () => {
+    fetch("http://5cb6f62aa3763800149fd07a.mockapi.io/api/works")
+      .then(response => response.json())
+      .then(data => this.setState({ list: data }))
+      .catch(error => console.error(error));
   };
 
   componentDidMount() {
@@ -22,12 +20,10 @@ class WorksPlaceholders extends Component {
   render() {
     let listComponents;
     const listResp = this.state.list;
-    try {
+    if (listResp !== undefined) {
       listComponents = listResp.map(item => (
         <WorksPlaceholder id={item.id} img={item.avatar} name={item.name} />
       ));
-    } catch (error) {
-      console.log(error);
     }
     return <div className="our-works-placeholders">{listComponents}</div>;
   }

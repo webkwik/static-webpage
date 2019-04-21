@@ -11,17 +11,20 @@ class Id extends Component {
     img: undefined,
     desc: undefined
   };
-  getData = async () => {
-    const url = await fetch(
+  getData = () => {
+    fetch(
       "http://5cb6f62aa3763800149fd07a.mockapi.io/api/works/" +
         this.props.match.params.id
-    );
-    const data = await url.json();
-    this.setState({
-      name: data.name,
-      img: data.avatar,
-      desc: data.description
-    });
+    )
+      .then(response => response.json())
+      .then(data =>
+        this.setState({
+          name: data.name,
+          img: data.avatar,
+          desc: data.description
+        })
+      )
+      .catch(error => console.error(error));
   };
 
   componentDidMount() {
