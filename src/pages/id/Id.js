@@ -13,7 +13,7 @@ class Id extends Component {
   };
   getData = () => {
     fetch(
-      "http://5cb6f62aa3763800149fd07a.mockapi.io/api/works/" +
+      "https://5cb6f62aa3763800149fd07a.mockapi.io/api/works/" +
         this.props.match.params.id
     )
       .then(response => response.json())
