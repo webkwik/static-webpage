@@ -2,21 +2,25 @@ import React from "react";
 import "./App.css";
 import Header from "./header/Header";
 import ContainerFooter from "./containerFooter/ContainerFooter";
-import { BrowserRouter as Router, Route, Link } from "react-router-dom";
+import { BrowserRouter as Router, Route, Link, Switch } from "react-router-dom";
 import Home from "../pages/Home";
 import About from "../pages/about/About";
 import Contact from "../pages/contact/Contact";
 import Id from "../pages/id/Id";
+import Work from "../pages/work/Work";
 
 function App() {
   return (
     <Router>
       <div className="container">
         <Header />
-        <Route exact path="/" component={Home} />
-        <Route path="/about" component={About} />
-        <Route path="/contact" component={Contact} />
-        <Route path="/:id" component={Id} />
+        <Switch>
+          <Route exact path="/" component={Home} />
+          <Route path="/about" component={About} />
+          <Route path="/contact" component={Contact} />
+          <Route path="/work/:id" component={Id} />
+          <Route component={Work} />
+        </Switch>
       </div>
       <footer>
         <ContainerFooter />

@@ -1,5 +1,4 @@
 import React, { Component } from "react";
-import { BrowserRouter as Router, Route, Link, Switch } from "react-router-dom";
 import ContainerClients from "../../components/containerClients/ContainerClients";
 import FooterSocial from "../../components/containerFooter/submenuSocial/footerSocial/FooterSocial";
 import SliderTitle from "../../components/containerSlider/sliderItem1/sliderTitleText/sliderTitle/SliderTitle";
