@@ -3,6 +3,7 @@ import ContainerClients from "../../components/containerClients/ContainerClients
 import FooterSocial from "../../components/containerFooter/submenuSocial/footerSocial/FooterSocial";
 import SliderTitle from "../../components/containerSlider/sliderItem1/sliderTitleText/sliderTitle/SliderTitle";
 import BlueButton from "../../components/containerSlider/sliderItem1/blueButton/BlueButton";
+import ScrollToTopOnMount from "../../components/scrollToTopOnMount/ScrollToTopOnMount";
 
 class Id extends Component {
   state = {
@@ -28,11 +29,12 @@ class Id extends Component {
 
   componentDidMount() {
     this.getData();
-    window.scrollTo(0, 0);
   }
+
   render() {
     return (
       <React.Fragment>
+        <ScrollToTopOnMount />
         <div className="about-title-social">
           <SliderTitle>{this.state.desc}</SliderTitle>
           <FooterSocial forAbout="true" />
