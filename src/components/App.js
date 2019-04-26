@@ -7,7 +7,7 @@ import Home from "../pages/Home";
 import About from "../pages/about/About";
 import Contact from "../pages/contact/Contact";
 import Id from "../pages/id/Id";
-import Work from "../pages/work/Work";
+import NotFound from "../pages/notFound/NotFound";
 
 function App() {
   return (
@@ -19,7 +19,7 @@ function App() {
           <Route path="/about" component={About} />
           <Route path="/contact" component={Contact} />
           <Route path="/work/:id" component={Id} />
-          <Route component={Work} />
+          <Route component={NotFound} />
         </Switch>
       </div>
       <footer>

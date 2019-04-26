@@ -1,8 +1,7 @@
 import React, { Component } from "react";
-import "./Work.css";
-import ContainerClients from "../../components/containerClients/ContainerClients";
+import "./NotFound.css";
 
-class Work extends Component {
+class NotFound extends Component {
   render() {
     return (
       <React.Fragment>
@@ -12,4 +11,4 @@ class Work extends Component {
   }
 }
 
-export default Work;
+export default NotFound;
