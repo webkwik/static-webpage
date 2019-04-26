@@ -8,7 +8,7 @@ class WorksPlaceholders extends Component {
   };
 
   getImg = () => {
-    fetch("https://5cb6f62aa3763800149fd07a.mockapi.io/api/works")
+    fetch(process.env.REACT_APP_API_WORKS)
       .then(response => response.json())
       .then(data => this.setState({ list: data }))
       .catch(error => console.error(error));
