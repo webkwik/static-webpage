@@ -1,6 +1,7 @@
 import React, { Component } from "react";
 import "./WorksPlaceholders.css";
 import WorksPlaceholder from "./worksPlaceholder/WorksPlaceholder";
+import Loader from "../../loader/Loader";
 
 class WorksPlaceholders extends Component {
   state = {
@@ -19,13 +20,15 @@ class WorksPlaceholders extends Component {
   }
   render() {
     let listComponents;
-    const listResp = this.state.list;
-    if (listResp !== undefined) {
-      listComponents = listResp.map(item => (
+    const { list } = this.state;
+    if (list !== undefined) {
+      listComponents = list.map(item => (
         <WorksPlaceholder id={item.id} img={item.avatar} name={item.name} />
       ));
+      return <div className="our-works-placeholders">{listComponents}</div>;
+    } else {
+      return <Loader />;
     }
-    return <div className="our-works-placeholders">{listComponents}</div>;
   }
 }
 
