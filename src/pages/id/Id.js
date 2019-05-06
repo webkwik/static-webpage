@@ -15,10 +15,7 @@ class Id extends Component {
     loading: false
   };
   getData = () => {
-    fetch(
-      "https://5cb6f62aa3763800149fd07a.mockapi.io/api/works/" +
-        this.props.match.params.id
-    )
+    fetch(process.env.REACT_APP_API_WORK_ID + this.props.match.params.id)
       .then(response => response.json())
       .then(data =>
         this.setState({
