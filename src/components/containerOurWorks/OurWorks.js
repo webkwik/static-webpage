@@ -21,7 +21,6 @@ class OurWorks extends Component {
           </div>
         </div>
         <WorksPlaceholders />
-        <WorksPlaceholders />
         <WorksTextButton />
       </div>
     );
