@@ -27,6 +27,27 @@
   margin-left: 18px;
 }
 
+.is-invalid {
+  border: 1px ridge;
+  border-color: red;
+}
+
+.invalid-feedback {
+  margin-top: 10px;
+  font-family: "Fira Sans", sans-serif;
+  font-size: 18px;
+  color: red;
+}
+
+.input-error {
+  display: flex;
+  flex-direction: column;
+}
+
+*:focus {
+  outline: none;
+}
+
 @media only screen and (max-width: 960px) {
   .footer-forms {
     display: none;
