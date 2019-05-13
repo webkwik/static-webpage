@@ -25,6 +25,27 @@
   letter-spacing: 4px;
   color: #ffffff;
   margin-left: 18px;
+  cursor: pointer;
+}
+
+.is-invalid {
+  border: 1px ridge red;
+}
+
+.invalid-feedback {
+  margin-top: 10px;
+  font-family: "Fira Sans", sans-serif;
+  font-size: 18px;
+  color: red;
+}
+
+.input-error {
+  display: flex;
+  flex-direction: column;
+}
+
+*:focus {
+  outline: none;
 }
 
 @media only screen and (max-width: 960px) {
