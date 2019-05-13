@@ -25,11 +25,11 @@
   letter-spacing: 4px;
   color: #ffffff;
   margin-left: 18px;
+  cursor: pointer;
 }
 
 .is-invalid {
-  border: 1px ridge;
-  border-color: red;
+  border: 1px ridge red;
 }
 
 .invalid-feedback {

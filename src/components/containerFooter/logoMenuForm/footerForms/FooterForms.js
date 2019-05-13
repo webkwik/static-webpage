@@ -2,6 +2,7 @@ import React, { Component } from "react";
 import "./FooterForms.css";
 import { Formik, Form, Field, ErrorMessage } from "formik";
 import * as Yup from "yup";
+import classNames from "classnames";
 
 class FooterForms extends Component {
   render() {
@@ -25,10 +26,10 @@ class FooterForms extends Component {
                 name="email"
                 type="text"
                 placeholder="Email"
-                className={
-                  "footer-input" +
-                  (errors.email && touched.email ? " is-invalid" : "")
-                }
+                className={classNames({
+                  "footer-input": true,
+                  "is-invalid": errors.email && touched.email
+                })}
               />
               <ErrorMessage
                 name="email"
@@ -37,7 +38,7 @@ class FooterForms extends Component {
               />
             </div>
             <button className="footer-button" type="submit">
-              SENT
+              SEND
             </button>
           </Form>
         )}
@@ -47,18 +48,3 @@ class FooterForms extends Component {
 }
 
 export default FooterForms;
-
-// class FooterForms extends Component {
-//   render() {
-//     return (
-//       <form className="footer-forms">
-//         <input className="footer-input" type="email" placeholder="Email" />
-//         <button className="footer-button" type="button">
-//           SENT
-//         </button>
-//       </form>
-//     );
-//   }
-// }
-
-// export default FooterForms;
